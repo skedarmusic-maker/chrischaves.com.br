@@ -1,0 +1,63 @@
+import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import { businessInfo } from '@/data/businessInfo'
+
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+    title: {
+        default: businessInfo.seo.core[3] + " em " + "Porto Alegre" + " | " + "Chris Chaves",
+        template: '%s | Chris Chaves'
+    },
+    description: businessInfo.description,
+    icons: {
+        icon: '/favicon.ico',
+    },
+    openGraph: {
+        type: 'website',
+        locale: 'pt_BR',
+        url: 'https://chrischaves24h.com.br',
+        siteName: 'Chris Chaves | Chaveiro 24h',
+        title: 'Chaveiro 24 Horas em Porto Alegre | Chris Chaves',
+        description: businessInfo.description,
+        images: [
+            {
+                url: '/og-image.jpg', // Placeholder for OG Image
+                width: 1200,
+                height: 630,
+                alt: 'Chris Chaves Chaveiro 24h em Porto Alegre',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Chaveiro 24 Horas em Porto Alegre | Chris Chaves',
+        description: businessInfo.description,
+        images: ['/og-image.jpg'], // Placeholder
+    },
+    verification: {
+        google: 'GOOGLE_SEARCH_CONSOLE_ID', // Placeholder
+    },
+}
+
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
+
+export default function RootLayout({
+    children,
+}: {
+    children: React.ReactNode
+}) {
+    return (
+        <html lang="pt-BR">
+            <body className={`${inter.className} bg-black text-white antialiased selection:bg-green-500 selection:text-black`}>
+                <Navbar />
+                <div className="pt-20">
+                    {children}
+                </div>
+                <Footer />
+            </body>
+        </html >
+    )
+}
