@@ -40,7 +40,7 @@ export default function Chaveiro24HorasPage() {
     }
 
     return (
-        <main className="min-h-screen bg-black text-gray-200 selection:bg-yellow-400/30 selection:text-yellow-400 font-sans">
+        <main className="min-h-screen bg-black text-gray-200 selection:bg-green-500/30 selection:text-green-500 font-sans">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -49,26 +49,26 @@ export default function Chaveiro24HorasPage() {
             {/* 1. HERO SECTION: NIGHTWATCH MODE */}
             <section className="relative pt-32 pb-20 border-b border-neutral-800 overflow-hidden">
                 {/* Night City Abstract Background */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.05),transparent_70%)] pointer-events-none" />
-                <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.05),transparent_70%)] pointer-events-none" />
+                <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent" />
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-12 items-start">
 
                         {/* LEFT: CONTENT */}
                         <div className="flex-1 space-y-8">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-yellow-400/10 border border-yellow-400/30 rounded-full text-yellow-400 text-xs font-mono tracking-widest uppercase">
-                                <span className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/30 rounded-full text-green-500 text-xs font-mono tracking-widest uppercase">
+                                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                                 Plantão Ativo
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-white leading-[1.1] mb-6">
                                 CHAVEIRO 24 HORAS <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-300">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-400">
                                     EM PORTO ALEGRE
                                 </span>
                             </h1>
-                            <h2 className="text-lg text-yellow-400 font-mono mb-8 uppercase tracking-widest">
+                            <h2 className="text-lg text-green-500 font-mono mb-8 uppercase tracking-widest">
                                 Atendimento para Situações Urgentes
                             </h2>
 
@@ -76,7 +76,7 @@ export default function Chaveiro24HorasPage() {
                                 Imprevistos com chaves e fechaduras podem acontecer em qualquer momento do dia ou da noite. O serviço de chaveiro 24 horas em Porto Alegre oferece suporte para situações urgentes, ajudando a recuperar acesso a residências, veículos ou estabelecimentos quando não é possível esperar.
                             </p>
 
-                            <p className="text-neutral-500 max-w-xl text-sm border-l-2 border-yellow-400/30 pl-4 py-2">
+                            <p className="text-neutral-500 max-w-xl text-sm border-l-2 border-green-500/30 pl-4 py-2">
                                 Muitas pessoas procuram um chaveiro próximo fora do horário comercial após esquecer as chaves, enfrentar travamento de fechadura ou perder acesso ao carro.
                             </p>
 
@@ -84,7 +84,7 @@ export default function Chaveiro24HorasPage() {
                                 <a
                                     href={whatsappLink}
                                     target="_blank"
-                                    className="group relative inline-flex items-center justify-center px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-lg tracking-wide uppercase transition-all duration-200 clip-path-button shadow-[0_0_20px_rgba(250,204,21,0.4)]"
+                                    className="group relative inline-flex items-center justify-center px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-bold text-lg tracking-wide uppercase transition-all duration-200 clip-path-button shadow-[0_0_20px_rgba(34,197,94,0.4)]"
                                 >
                                     <span className="mr-2">Chamar Agora</span>
                                     <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -97,12 +97,12 @@ export default function Chaveiro24HorasPage() {
                         {/* RIGHT: TIME STATUS PANEL */}
                         <div className="w-full lg:w-96 bg-neutral-900 border border-neutral-800 p-8 relative overflow-hidden">
                             <div className="absolute top-4 right-4 animate-pulse">
-                                <div className="w-3 h-3 bg-red-500 rounded-full shadow-[0_0_10px_red]"></div>
+                                <div className="w-3 h-3 bg-green-500 rounded-full shadow-[0_0_10px_#22c55e]"></div>
                             </div>
 
                             <h3 className="font-mono text-white text-xl mb-8 flex flex-col">
                                 <span className="text-xs text-neutral-500 mb-1">STATUS DO SISTEMA</span>
-                                <span className="text-yellow-400 font-bold">DISPONÍVEL AGORA</span>
+                                <span className="text-green-500 font-bold">DISPONÍVEL AGORA</span>
                             </h3>
 
                             <div className="space-y-6 relative z-10">
@@ -147,7 +147,7 @@ export default function Chaveiro24HorasPage() {
             <section className="py-24 bg-neutral-900/10 relative">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-yellow-400 font-mono text-xs uppercase tracking-[0.2em] mb-2 block">Casos de Emergência</span>
+                        <span className="text-green-500 font-mono text-xs uppercase tracking-[0.2em] mb-2 block">Casos de Emergência</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Situações Comuns</h2>
                     </div>
 
@@ -179,9 +179,9 @@ export default function Chaveiro24HorasPage() {
                                 icon: "📡"
                             }
                         ].map((card, i) => (
-                            <div key={i} className="bg-black border border-neutral-800 p-8 hover:border-yellow-400/50 transition-colors duration-300 group">
+                            <div key={i} className="bg-black border border-neutral-800 p-8 hover:border-green-500/50 transition-colors duration-300 group">
                                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{card.icon}</div>
-                                <h3 className="text-lg font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors uppercase">{card.title}</h3>
+                                <h3 className="text-lg font-bold text-white mb-3 group-hover:text-green-500 transition-colors uppercase">{card.title}</h3>
                                 <p className="text-neutral-500 text-sm leading-relaxed">{card.desc}</p>
                             </div>
                         ))}
@@ -196,26 +196,26 @@ export default function Chaveiro24HorasPage() {
 
                         {/* LEFT: BENEFITS */}
                         <div className="space-y-8 order-2 lg:order-1">
-                            <h3 className="text-3xl font-bold text-white uppercase tracking-tight">Vantagens do <span className="text-yellow-400">24 Horas</span></h3>
+                            <h3 className="text-3xl font-bold text-white uppercase tracking-tight">Vantagens do <span className="text-green-500">24 Horas</span></h3>
                             <p className="text-neutral-400 text-lg">Contar com um chaveiro disponível a qualquer hora traz segurança e tranquilidade.</p>
 
                             <div className="space-y-6">
                                 <div className="flex gap-4">
-                                    <div className="w-12 h-12 bg-neutral-900 flex items-center justify-center text-yellow-400 text-2xl rounded-sm">🕒</div>
+                                    <div className="w-12 h-12 bg-neutral-900 flex items-center justify-center text-green-500 text-2xl rounded-sm">🕒</div>
                                     <div>
                                         <h4 className="text-white font-bold text-lg">Horários Alternativos</h4>
                                         <p className="text-neutral-500 text-sm">Suporte inclusive de madrugada, feriados e finais de semana.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
-                                    <div className="w-12 h-12 bg-neutral-900 flex items-center justify-center text-yellow-400 text-2xl rounded-sm">📍</div>
+                                    <div className="w-12 h-12 bg-neutral-900 flex items-center justify-center text-green-500 text-2xl rounded-sm">📍</div>
                                     <div>
                                         <div className="text-white font-bold text-lg">Atendimento no Local</div>
                                         <p className="text-neutral-500 text-sm">Vamos até onde o problema ocorreu, seja na rua ou em casa.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
-                                    <div className="w-12 h-12 bg-neutral-900 flex items-center justify-center text-yellow-400 text-2xl rounded-sm">🛠</div>
+                                    <div className="w-12 h-12 bg-neutral-900 flex items-center justify-center text-green-500 text-2xl rounded-sm">🛠</div>
                                     <div>
                                         <div className="text-white font-bold text-lg">Solução Profissional</div>
                                         <p className="text-neutral-500 text-sm">Evite danos tentando abrir sozinho. Técnicas corretas e ferramentas adequadas.</p>
@@ -226,10 +226,10 @@ export default function Chaveiro24HorasPage() {
 
                         {/* RIGHT: CHECKLIST */}
                         <div className="bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 p-10 relative order-1 lg:order-2">
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-yellow-400/5 rounded-bl-full"></div>
+                            <div className="absolute top-0 right-0 w-24 h-24 bg-green-500/5 rounded-bl-full"></div>
 
                             <h3 className="text-2xl font-bold text-white mb-8 uppercase relative z-10 flex items-center gap-3">
-                                <span className="inline-block w-3 h-3 bg-red-500 animate-pulse rounded-full"></span>
+                                <span className="inline-block w-3 h-3 bg-green-500 animate-pulse rounded-full"></span>
                                 Quando Chamar?
                             </h3>
 
@@ -242,7 +242,7 @@ export default function Chaveiro24HorasPage() {
                                     "O problema ocorreu fora do horário comercial"
                                 ].map((item, i) => (
                                     <li key={i} className="flex gap-4 items-center border-b border-neutral-800 pb-3 last:border-0">
-                                        <span className="text-yellow-400 text-lg">⚠️</span>
+                                        <span className="text-green-500 text-lg">⚠️</span>
                                         <span className="text-neutral-300 text-sm font-medium">{item}</span>
                                     </li>
                                 ))}
@@ -250,7 +250,7 @@ export default function Chaveiro24HorasPage() {
 
                             <div className="mt-8">
                                 <p className="text-xs text-center text-neutral-500 mb-2">CLIQUE PARA CHAMAR</p>
-                                <a href={whatsappLink} target="_blank" className="block w-full py-4 bg-red-600 hover:bg-red-500 text-white font-bold text-center uppercase tracking-wide transition-colors rounded-sm shadow-lg shadow-red-900/20">
+                                <a href={whatsappLink} target="_blank" className="block w-full py-4 bg-green-600 hover:bg-green-500 text-white font-bold text-center uppercase tracking-wide transition-colors rounded-sm shadow-lg shadow-green-900/20">
                                     Emergência (WhatsApp)
                                 </a>
                             </div>
@@ -267,9 +267,9 @@ export default function Chaveiro24HorasPage() {
                     {faqData.map((item, index) => (
                         <div key={index} className="group border border-neutral-800 bg-neutral-900/30 hover:bg-neutral-900 transition-colors rounded-sm">
                             <details className="p-6 cursor-pointer">
-                                <summary className="flex items-center justify-between font-bold text-neutral-200 group-hover:text-yellow-400 uppercase tracking-wide list-none transition-colors">
+                                <summary className="flex items-center justify-between font-bold text-neutral-200 group-hover:text-green-500 uppercase tracking-wide list-none transition-colors">
                                     {item.question}
-                                    <svg className="w-5 h-5 text-neutral-500 group-hover:text-yellow-400 transform group-open:rotate-180 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg className="w-5 h-5 text-neutral-500 group-hover:text-green-500 transform group-open:rotate-180 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </summary>
@@ -283,14 +283,14 @@ export default function Chaveiro24HorasPage() {
             </section>
 
             {/* 5. CTA */}
-            <section className="py-32 bg-yellow-400/5 relative overflow-hidden text-center border-t border-neutral-800">
+            <section className="py-32 bg-green-500/5 relative overflow-hidden text-center border-t border-neutral-800">
                 <div className="relative z-10 max-w-3xl mx-auto px-4">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tighter">PRECISA DE AJUDA <span className="text-yellow-400">AGORA?</span></h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tighter">PRECISA DE AJUDA <span className="text-green-500">AGORA?</span></h2>
                     <p className="text-xl text-neutral-400 mb-12">Entre em contato pelo WhatsApp para verificar disponibilidade e solicitar atendimento imediato.</p>
                     <a
                         href={whatsappLink}
                         target="_blank"
-                        className="inline-flex items-center justify-center px-12 py-6 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-xl uppercase tracking-widest transition-transform hover:scale-105 shadow-[0_0_50px_rgba(250,204,21,0.4)] rounded-sm"
+                        className="inline-flex items-center justify-center px-12 py-6 bg-green-600 hover:bg-green-500 text-white font-bold text-xl uppercase tracking-widest transition-transform hover:scale-105 shadow-[0_0_50px_rgba(34,197,94,0.4)] rounded-sm"
                     >
                         Falar no WhatsApp
                     </a>

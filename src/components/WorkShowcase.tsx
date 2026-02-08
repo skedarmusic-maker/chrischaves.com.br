@@ -1,18 +1,19 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const works = [
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter.webp",
-        title: "Abertura Técnica",
-        category: "Emergencial"
+        title: "Troca de Baterias",
+        category: "Manutenção"
     },
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_2.webp",
-        title: "Cópia Automotiva",
-        category: "Veículos"
+        title: "Troca de Capa Chave",
+        category: "Acessórios"
     },
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_3.webp",
@@ -21,13 +22,13 @@ const works = [
     },
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_4.webp",
-        title: "Manutenção de Cofre",
-        category: "Segurança"
+        title: "Manutenção de Fechadura",
+        category: "Conserto"
     },
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_5.webp",
-        title: "Chave Codificada",
-        category: "Tecnologia"
+        title: "Chave Quebrada",
+        category: "Emergência"
     },
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_6.webp",
@@ -36,12 +37,25 @@ const works = [
     },
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_7.webp",
-        title: "Troca de Segredo",
-        category: "Prevenção"
+        title: "Instalação Digital",
+        category: "Tecnologia"
+    },
+    {
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_8.jpeg",
+        title: "Abertura Automotiva",
+        category: "Veículos"
+    },
+    {
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_9.jpeg",
+        title: "Cópia Codificada",
+        category: "Automotivo"
     }
 ]
 
 export function WorkShowcase() {
+    const [isExpanded, setIsExpanded] = useState(false)
+    const visibleWorks = isExpanded ? works : works.slice(0, 4)
+
     return (
         <section className="py-24 bg-black relative overflow-hidden">
             {/* Background Elements */}
@@ -83,50 +97,82 @@ export function WorkShowcase() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[300px]">
-                    {works.map((work, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className={`group relative overflow-hidden rounded-sm border border-neutral-800 bg-neutral-900 
-                                ${index === 0 ? 'md:col-span-2 md:row-span-1' : ''}
-                                ${index === 3 ? 'md:col-span-2 md:row-span-1' : ''}
-                            `}
-                        >
-                            <Image
-                                src={work.src}
-                                alt={work.title}
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100 grayscale group-hover:grayscale-0"
-                            />
+                    <AnimatePresence mode='popLayout'>
+                        {visibleWorks.map((work, index) => (
+                            <motion.div
+                                key={work.src} // Use src as key to prevent re-mounting existing items
+                                layout
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                exit={{ opacity: 0, scale: 0.9 }}
+                                transition={{ duration: 0.4 }}
+                                className={`group relative overflow-hidden rounded-sm border border-neutral-800 bg-neutral-900 
+                                    ${(index === 0 || index === 3 || index === 5 || index === 6) ? 'md:col-span-2 md:row-span-1' : ''}
+                                    ${index === 8 ? 'md:col-span-3 md:row-span-1' : ''}
+                                `}
+                            >
+                                <Image
+                                    src={work.src}
+                                    alt={work.title}
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100 grayscale group-hover:grayscale-0"
+                                />
 
-                            {/* Cyber Overlay Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
-                            <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay" />
+                                {/* Cyber Overlay Effect */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
+                                <div className="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mix-blend-overlay" />
 
-                            {/* Scanning Line Animation */}
-                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-500/10 to-transparent translate-y-[-100%] group-hover:translate-y-[100%] transition-transform duration-1000 ease-in-out pointer-events-none" />
+                                {/* Scanning Line Animation */}
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-500/10 to-transparent translate-y-[-100%] group-hover:translate-y-[100%] transition-transform duration-1000 ease-in-out pointer-events-none" />
 
-                            <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                <div className="flex items-center gap-3 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                                    <span className="w-8 h-[1px] bg-green-500" />
-                                    <span className="text-green-400 text-xs font-mono uppercase tracking-wider">
-                                        {work.category}
-                                    </span>
+                                <div className="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div className="flex items-center gap-3 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                                        <span className="w-8 h-[1px] bg-green-500" />
+                                        <span className="text-green-400 text-xs font-mono uppercase tracking-wider">
+                                            {work.category}
+                                        </span>
+                                    </div>
+                                    <h3 className="text-2xl font-bold text-white group-hover:text-green-50 transition-colors">
+                                        {work.title}
+                                    </h3>
                                 </div>
-                                <h3 className="text-2xl font-bold text-white group-hover:text-green-50 transition-colors">
-                                    {work.title}
-                                </h3>
-                            </div>
 
-                            {/* Corner Accents */}
-                            <div className="absolute top-2 right-2 w-2 h-2 border-t border-r border-green-500/30 group-hover:border-green-500 transition-colors" />
-                            <div className="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-green-500/30 group-hover:border-green-500 transition-colors" />
-                        </motion.div>
-                    ))}
+                                {/* Corner Accents */}
+                                <div className="absolute top-2 right-2 w-2 h-2 border-t border-r border-green-500/30 group-hover:border-green-500 transition-colors" />
+                                <div className="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-green-500/30 group-hover:border-green-500 transition-colors" />
+                            </motion.div>
+                        ))}
+                    </AnimatePresence>
                 </div>
+
+                {/* Toggle Button */}
+                <div className="mt-12 flex justify-center">
+                    <button
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        className="group relative inline-flex items-center gap-2 px-8 py-3 bg-neutral-900 border border-green-900/30 hover:border-green-500 text-white font-medium rounded-sm transition-all duration-300 overflow-hidden"
+                    >
+                        <span className="relative z-10 hidden md:inline">
+                            {isExpanded ? 'Ver Menos Projetos' : 'Ver Mais Projetos'}
+                        </span>
+                        <span className="relative z-10 md:hidden">
+                            {isExpanded ? 'Ver Menos' : 'Ver Mais'}
+                        </span>
+
+                        {/* Icon */}
+                        <svg
+                            className={`w-5 h-5 text-green-500 transition-transform duration-300 relative z-10 ${isExpanded ? 'rotate-180' : ''}`}
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+
+                        {/* Hover Fill Effect */}
+                        <div className="absolute inset-0 bg-green-900/20 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300" />
+                    </button>
+                </div>
+
             </div>
         </section>
     )
