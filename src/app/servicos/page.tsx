@@ -1,6 +1,7 @@
 import { businessInfo } from '@/data/businessInfo'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { LocalBusinessJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
     title: 'Serviços de Chaveiro 24h em Porto Alegre | Chris Chaves',
@@ -24,6 +25,7 @@ export default function ServicesPage() {
 
     return (
         <main className="min-h-screen bg-black text-white pb-20">
+            <LocalBusinessJsonLd />
             {/* Header Section */}
             <section className="relative py-20 border-b border-neutral-800 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-green-900/20 via-black to-black">
                 <div className="container mx-auto px-4 text-center">

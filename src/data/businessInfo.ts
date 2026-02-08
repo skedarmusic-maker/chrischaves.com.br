@@ -5,6 +5,27 @@ export const businessInfo = {
     hours: "Aberto 24 horas",
     plusCode: "XVGH+27 Jardim Dona Leopoldina, Porto Alegre - RS",
     instagram: "https://www.instagram.com/chrischaves24h",
+    siteUrl: "https://chrischaves24h.com.br",
+    logoUrl: "https://chrischaves24h.com.br/logo.png",
+    priceRange: "$$",
+    geo: {
+        latitude: -30.0108,
+        longitude: -51.1333
+    },
+    rating: {
+        value: 5.0,
+        count: 35
+    },
+    socials: [
+        "https://www.instagram.com/chrischaves24h"
+    ],
+    areaServed: [
+        "Porto Alegre",
+        "Canoas",
+        "Viamão",
+        "Gravataí",
+        "Alvorada"
+    ],
     description: "Chris Chaves 24h é uma empresa com anos de experiência e qualificação, especializada no segmento de chaveiro e com foco em atendimento emergencial 24h. Realizamos os serviços de: cópias e confecções de chaves automotivas nacionais e importadas; troca de segredos; cópias de chaves em geral; cópias de controles em geral; confecções de carimbos; conserto de fechaduras; troca de baterias; controle de portões e muito mais! Atuamos 24 horas! Atendemos toda a região de Porto Alegre! Faça contato agora mesmo via WhatsApp!",
     services: [
         "Serviço de chaveiro emergencial",

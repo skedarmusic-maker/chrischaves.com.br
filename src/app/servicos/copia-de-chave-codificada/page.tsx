@@ -2,7 +2,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { ServiceJsonLd } from '@/components/JsonLd'
 
 export default function CopiaChaveCodificadaPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20cópia%20de%20chave%20codificada"
@@ -41,6 +41,11 @@ export default function CopiaChaveCodificadaPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-green-500/30 selection:text-green-500 font-sans">
+            <ServiceJsonLd
+                name="Cópia de Chave Codificada em Porto Alegre"
+                description="Especialista em cópia e programação de chaves codificadas para veículos nacionais e importados em Porto Alegre. Scanner OBD2 e chips de alta qualidade."
+                url="https://chrischaves24h.com.br/servicos/copia-de-chave-codificada"
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

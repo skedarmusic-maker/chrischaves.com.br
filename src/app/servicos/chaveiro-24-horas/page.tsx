@@ -2,7 +2,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { ServiceJsonLd } from '@/components/JsonLd'
 
 export default function Chaveiro24HorasPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20chaveiro%2024%20horas"
@@ -41,6 +41,11 @@ export default function Chaveiro24HorasPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-green-500/30 selection:text-green-500 font-sans">
+            <ServiceJsonLd
+                name="Chaveiro 24 Horas em Porto Alegre"
+                description="Serviço de chaveiro emergencial disponível 24 horas por dia em Porto Alegre e região metropolitana. Atendimento rápido para aberturas, cópias e trocas."
+                url="https://chrischaves24h.com.br/servicos/chaveiro-24-horas"
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

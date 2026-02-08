@@ -2,7 +2,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { ServiceJsonLd } from '@/components/JsonLd'
 
 export default function CopiaChavesVeiculosPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20uma%20cópia%20da%20chave%20do%20meu%20carro"
@@ -14,7 +14,7 @@ export default function CopiaChavesVeiculosPage() {
         },
         {
             question: "PROTOCOLO: Preciso levar o carro até a loja?",
-            answer: "RECOMENDADO. A codificação exige conexão via porta OBD2 do veículo para pareamento do chip transponder com a central eletrônica."
+            answer: "RECOMENDADO. A codificação exige conexão via porta OBD2 del veículo para pareamento do chip transponder com a central eletrônica."
         },
         {
             question: "TEMPO: Quanto tempo demora a codificação?",
@@ -41,6 +41,11 @@ export default function CopiaChavesVeiculosPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-emerald-500/30 selection:text-emerald-500 font-sans">
+            <ServiceJsonLd
+                name="Cópia de Chaves de Veículos em Porto Alegre"
+                description="Serviço especializado de cópia de chaves automotivas em Porto Alegre. Atendemos chaves comuns, canivete, codificadas e de presença (Keyless)."
+                url="https://chrischaves24h.com.br/servicos/copia-de-chaves-de-veiculos"
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

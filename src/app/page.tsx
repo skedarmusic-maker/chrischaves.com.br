@@ -6,52 +6,12 @@ import { FAQ } from '@/components/FAQ'
 import { Testimonials } from '@/components/Testimonials'
 
 import { businessInfo } from '@/data/businessInfo'
+import { LocalBusinessJsonLd } from '@/components/JsonLd'
 
 export default function Home() {
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "Locksmith",
-        "name": businessInfo.name,
-        "image": "", // Add image URL if available later
-        "description": businessInfo.description,
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Av. Karl Iwers, 1800",
-            "addressLocality": "Porto Alegre",
-            "addressRegion": "RS",
-            "postalCode": "91230-570",
-            "addressCountry": "BR"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -30.0123, // Approximate, would need exact if available or rely on address
-            "longitude": -51.1345
-        },
-        "url": "https://chrischaves24h.com.br", // Placeholder
-        "telephone": businessInfo.phone,
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-        },
-        "priceRange": "$$"
-    }
-
     return (
         <main className="min-h-screen bg-black overflow-x-hidden">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
+            <LocalBusinessJsonLd />
 
             <Hero />
             <Services />

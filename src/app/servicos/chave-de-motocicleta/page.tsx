@@ -2,7 +2,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { ServiceJsonLd } from '@/components/JsonLd'
 
 export default function ChaveMotocicletaPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20ajuda%20com%20chave%20de%20moto"
@@ -41,6 +41,11 @@ export default function ChaveMotocicletaPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-green-600/30 selection:text-green-500 font-sans">
+            <ServiceJsonLd
+                name="Chave de Motocicleta em Porto Alegre"
+                description="Cópia e confecção de chaves para motos de todas as marcas em Porto Alegre. Atendimento especializado para chaves comuns e codificadas."
+                url="https://chrischaves24h.com.br/servicos/chave-de-motocicleta"
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

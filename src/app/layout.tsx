@@ -6,14 +6,15 @@ import { businessInfo } from '@/data/businessInfo'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://chrischaves24h.com.br'),
     title: {
         default: businessInfo.seo.core[3] + " em " + "Porto Alegre" + " | " + "Chris Chaves",
         template: '%s | Chris Chaves'
     },
     description: businessInfo.description,
-    icons: {
-        icon: '/favicon.ico',
-    },
+    // icons: {
+    //     icon: '/favicon.ico',
+    // },
     openGraph: {
         type: 'website',
         locale: 'pt_BR',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
         description: businessInfo.description,
         images: [
             {
-                url: '/og-image.jpg', // Placeholder for OG Image
+                url: '/logo.png', // Using logo as default OG Image
                 width: 1200,
                 height: 630,
                 alt: 'Chris Chaves Chaveiro 24h em Porto Alegre',
@@ -34,10 +35,10 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Chaveiro 24 Horas em Porto Alegre | Chris Chaves',
         description: businessInfo.description,
-        images: ['/og-image.jpg'], // Placeholder
+        images: ['/logo.png'], // Using logo as default
     },
     verification: {
-        google: 'GOOGLE_SEARCH_CONSOLE_ID', // Placeholder
+        google: '9L8FQl83SDpT8Cn3MxWAvHYn9hnRZPLwGjahjI8_Es0',
     },
 }
 
