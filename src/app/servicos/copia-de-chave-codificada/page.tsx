@@ -44,7 +44,7 @@ export default function CopiaChaveCodificadaPage() {
             <ServiceJsonLd
                 name="Cópia de Chave Codificada em Porto Alegre"
                 description="Especialista em cópia e programação de chaves codificadas para veículos nacionais e importados em Porto Alegre. Scanner OBD2 e chips de alta qualidade."
-                url="https://chrischaves24h.com.br/servicos/copia-de-chave-codificada"
+                url="https://chrischaves.com.br/servicos/copia-de-chave-codificada"
             />
             <script
                 type="application/ld+json"

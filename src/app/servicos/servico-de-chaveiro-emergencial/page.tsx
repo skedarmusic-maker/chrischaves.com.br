@@ -44,7 +44,7 @@ export default function ChaveiroEmergencialPage() {
             <ServiceJsonLd
                 name="Serviço de Chaveiro Emergencial em Porto Alegre"
                 description="Atendimento de chaveiro emergencial rápido em Porto Alegre. Socorro imediato para portas trancadas, chaves perdidas ou quebradas."
-                url="https://chrischaves24h.com.br/servicos/servico-de-chaveiro-emergencial"
+                url="https://chrischaves.com.br/servicos/servico-de-chaveiro-emergencial"
             />
             <script
                 type="application/ld+json"

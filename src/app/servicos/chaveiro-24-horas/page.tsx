@@ -44,7 +44,7 @@ export default function Chaveiro24HorasPage() {
             <ServiceJsonLd
                 name="Chaveiro 24 Horas em Porto Alegre"
                 description="Serviço de chaveiro emergencial disponível 24 horas por dia em Porto Alegre e região metropolitana. Atendimento rápido para aberturas, cópias e trocas."
-                url="https://chrischaves24h.com.br/servicos/chaveiro-24-horas"
+                url="https://chrischaves.com.br/servicos/chaveiro-24-horas"
             />
             <script
                 type="application/ld+json"

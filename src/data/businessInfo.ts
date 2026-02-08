@@ -4,9 +4,9 @@ export const businessInfo = {
     phone: "(51) 99339-8664",
     hours: "Aberto 24 horas",
     plusCode: "XVGH+27 Jardim Dona Leopoldina, Porto Alegre - RS",
-    instagram: "https://www.instagram.com/chrischaves24h",
-    siteUrl: "https://chrischaves24h.com.br",
-    logoUrl: "https://chrischaves24h.com.br/logo.png",
+    instagram: "https://www.instagram.com/chrischaves24h", // Keeping instagram handle as is, assume user verified it
+    siteUrl: "https://chrischaves.com.br",
+    logoUrl: "https://chrischaves.com.br/logo.png",
     priceRange: "$$",
     geo: {
         latitude: -30.0108,

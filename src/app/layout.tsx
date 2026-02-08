@@ -6,7 +6,7 @@ import { businessInfo } from '@/data/businessInfo'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://chrischaves24h.com.br'),
+    metadataBase: new URL('https://chrischaves.com.br'),
     title: {
         default: businessInfo.seo.core[3] + " em " + "Porto Alegre" + " | " + "Chris Chaves",
         template: '%s | Chris Chaves'
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'pt_BR',
-        url: 'https://chrischaves24h.com.br',
+        url: 'https://chrischaves.com.br',
         siteName: 'Chris Chaves | Chaveiro 24h',
         title: 'Chaveiro 24 Horas em Porto Alegre | Chris Chaves',
         description: businessInfo.description,

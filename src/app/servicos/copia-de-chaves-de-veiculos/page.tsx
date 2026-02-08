@@ -44,7 +44,7 @@ export default function CopiaChavesVeiculosPage() {
             <ServiceJsonLd
                 name="Cópia de Chaves de Veículos em Porto Alegre"
                 description="Serviço especializado de cópia de chaves automotivas em Porto Alegre. Atendemos chaves comuns, canivete, codificadas e de presença (Keyless)."
-                url="https://chrischaves24h.com.br/servicos/copia-de-chaves-de-veiculos"
+                url="https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos"
             />
             <script
                 type="application/ld+json"

@@ -15,7 +15,7 @@ function slugify(text: string) {
 }
 
 export default function sitemap() {
-    const baseUrl = 'https://chrischaves24h.com.br' // Replace with actual domain when live
+    const baseUrl = 'https://chrischaves.com.br' // Replace with actual domain when live
 
     // Static routes
     const routes = [
