@@ -1,4 +1,5 @@
 import { Hero } from '@/components/Hero'
+import { WorkShowcase } from '@/components/WorkShowcase'
 import { Services } from '@/components/Services'
 import { Location } from '@/components/Location'
 import { FAQ } from '@/components/FAQ'
@@ -55,6 +56,7 @@ export default function Home() {
             <Hero />
             <Services />
             <Location />
+            <WorkShowcase />
             <Testimonials />
             <FAQ />
 
