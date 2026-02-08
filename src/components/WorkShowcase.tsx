@@ -6,29 +6,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const works = [
     {
-        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter.webp",
-        title: "Troca de Baterias",
-        category: "Manutenção"
-    },
-    {
-        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_2.webp",
-        title: "Troca de Capa Chave",
-        category: "Acessórios"
-    },
-    {
-        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_3.webp",
-        title: "Instalação de Fechadura",
-        category: "Residencial"
-    },
-    {
-        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_4.webp",
-        title: "Manutenção de Fechadura",
-        category: "Conserto"
-    },
-    {
-        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_5.webp",
-        title: "Chave Quebrada",
-        category: "Emergência"
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_8.jpeg",
+        title: "Abertura Automotiva",
+        category: "Veículos"
     },
     {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_6.webp",
@@ -36,19 +16,39 @@ const works = [
         category: "Plantão"
     },
     {
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_9.jpeg",
+        title: "Cópia Codificada",
+        category: "Automotivo"
+    },
+    {
         src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_7.webp",
         title: "Instalação Digital",
         category: "Tecnologia"
     },
     {
-        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_8.jpeg",
-        title: "Abertura Automotiva",
-        category: "Veículos"
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_5.webp",
+        title: "Chave Quebrada",
+        category: "Emergência"
     },
     {
-        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_9.jpeg",
-        title: "Cópia Codificada",
-        category: "Automotivo"
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_2.webp",
+        title: "Troca de Capa Chave",
+        category: "Acessórios"
+    },
+    {
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_4.webp",
+        title: "Manutenção de Fechadura",
+        category: "Conserto"
+    },
+    {
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_3.webp",
+        title: "Instalação de Fechadura",
+        category: "Residencial"
+    },
+    {
+        src: "/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter.webp",
+        title: "Troca de Baterias",
+        category: "Manutenção"
     }
 ]
 
