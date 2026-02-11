@@ -47,6 +47,7 @@ export function Navbar() {
                         ))}
 
                         <a
+                            id="btn-whatsapp-nav-desktop"
                             href={`https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}`}
                             className="bg-green-600 hover:bg-green-500 text-white text-sm font-bold py-2 px-6 rounded-full transition-transform hover:scale-105 shadow-[0_0_15px_rgba(34,197,94,0.4)]"
                             target="_blank"
@@ -89,6 +90,7 @@ export function Navbar() {
                         </Link>
                     ))}
                     <a
+                        id="btn-whatsapp-nav-mobile"
                         href={`https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}`}
                         className="w-full text-center bg-green-600 active:bg-green-700 text-white font-bold py-4 rounded-lg"
                         target="_blank"
