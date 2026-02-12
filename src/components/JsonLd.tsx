@@ -69,7 +69,6 @@ export function LocalBusinessJsonLd() {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
     )
-    )
 }
 
 export function ServiceListJsonLd() {
