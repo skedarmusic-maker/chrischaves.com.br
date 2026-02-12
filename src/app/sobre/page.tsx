@@ -4,6 +4,9 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
     title: 'Sobre Chris Chaves | Chaveiro 24 Horas em Porto Alegre',
     description: 'Conheça a Chris Chaves 24h, especialista em chaves automotivas, residenciais e atendimento emergencial em Porto Alegre e região. Qualidade e rapidez.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/sobre',
+    },
 }
 
 export default function AboutPage() {

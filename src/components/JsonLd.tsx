@@ -72,16 +72,20 @@ export function LocalBusinessJsonLd() {
 }
 
 interface ServiceJsonLdProps {
-    name: string
+    name?: string
+    title?: string
     description: string
     url: string
+    alternates?: {
+        canonical: string
+    }
 }
 
-export function ServiceJsonLd({ name, description, url }: ServiceJsonLdProps) {
+export function ServiceJsonLd({ name, title, description, url }: ServiceJsonLdProps) {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": name,
+        "name": name || title,
         "description": description,
         "provider": {
             "@id": `${businessInfo.siteUrl}/#organization`

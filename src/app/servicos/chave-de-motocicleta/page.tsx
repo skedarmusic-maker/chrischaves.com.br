@@ -43,8 +43,9 @@ export default function ChaveMotocicletaPage() {
         <main className="min-h-screen bg-black text-gray-200 selection:bg-green-600/30 selection:text-green-500 font-sans">
             <ServiceJsonLd
                 name="Chave de Motocicleta em Porto Alegre"
-                description="Cópia e confecção de chaves para motos de todas as marcas em Porto Alegre. Atendimento especializado para chaves comuns e codificadas."
+                description="Cópia e confecção de chaves para motos em Porto Alegre. Atendimento especializado para todas as marcas e modelos. Chaves codificadas e comuns."
                 url="https://chrischaves.com.br/servicos/chave-de-motocicleta"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/chave-de-motocicleta' }}
             />
             <script
                 type="application/ld+json"

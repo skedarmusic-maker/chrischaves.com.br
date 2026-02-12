@@ -42,8 +42,11 @@ export default function CopiaChavesVeiculosPage() {
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-emerald-500/30 selection:text-emerald-500 font-sans">
             <ServiceJsonLd
-                name="Cópia de Chaves de Veículos em Porto Alegre"
-                description="Serviço especializado de cópia de chaves automotivas em Porto Alegre. Atendemos chaves comuns, canivete, codificadas e de presença (Keyless)."
+                title='Cópia de Chaves de Veículos em Porto Alegre | Chris Chaves'
+                description='Cópia de chaves automotivas em Porto Alegre. Chaves canivete, presenciais e simples. Atendimento para todas as montadoras.'
+                alternates={{
+                    canonical: 'https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos',
+                }}
                 url="https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos"
             />
             <script

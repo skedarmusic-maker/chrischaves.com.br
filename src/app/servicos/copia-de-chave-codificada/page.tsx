@@ -45,6 +45,10 @@ export default function CopiaChaveCodificadaPage() {
                 name="Cópia de Chave Codificada em Porto Alegre"
                 description="Especialista em cópia e programação de chaves codificadas para veículos nacionais e importados em Porto Alegre. Scanner OBD2 e chips de alta qualidade."
                 url="https://chrischaves.com.br/servicos/copia-de-chave-codificada"
+                title='Cópia de Chave Codificada em Porto Alegre | Chris Chaves'
+                alternates={{
+                    canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-codificada',
+                }}
             />
             <script
                 type="application/ld+json"

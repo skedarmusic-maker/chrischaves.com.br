@@ -13,6 +13,9 @@ export const metadata: Metadata = {
         template: '%s | Chris Chaves'
     },
     description: businessInfo.description,
+    alternates: {
+        canonical: 'https://chrischaves.com.br',
+    },
     // icons: {
     //     icon: '/favicon.ico',
     // },

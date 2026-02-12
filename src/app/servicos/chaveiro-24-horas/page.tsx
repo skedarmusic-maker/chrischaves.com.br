@@ -45,6 +45,10 @@ export default function Chaveiro24HorasPage() {
                 name="Chaveiro 24 Horas em Porto Alegre"
                 description="Serviço de chaveiro emergencial disponível 24 horas por dia em Porto Alegre e região metropolitana. Atendimento rápido para aberturas, cópias e trocas."
                 url="https://chrischaves.com.br/servicos/chaveiro-24-horas"
+                title='Chaveiro 24 Horas em Porto Alegre | Chris Chaves'
+                alternates={{
+                    canonical: 'https://chrischaves.com.br/servicos/chaveiro-24-horas',
+                }}
             />
             <script
                 type="application/ld+json"
