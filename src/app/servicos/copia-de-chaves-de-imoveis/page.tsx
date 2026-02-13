@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Cópia de Chaves de Imóveis em Porto Alegre | Chris Chaves',
+    description: 'Duplicação precisa de chaves residenciais e comerciais em Porto Alegre. Cópias Yale, Tetra, Multiponto e mais com calibração micrométrica.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/copia-de-chaves-de-imoveis/',
+    },
+}
 
 export default function CopiaChavesImoveisPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20gostaria%20de%20fazer%20uma%20cópia%20de%20chave"
@@ -41,6 +46,12 @@ export default function CopiaChavesImoveisPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-cyan-500/30 selection:text-cyan-500 font-sans">
+            <ServiceJsonLd
+                name="Cópia de Chaves de Imóveis"
+                description="Serviço de duplicação de chaves imobiliárias com alta precisão em Porto Alegre."
+                url="https://chrischaves.com.br/servicos/copia-de-chaves-de-imoveis/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/copia-de-chaves-de-imoveis/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -9,9 +9,9 @@ export function Navbar() {
 
     const links = [
         { href: '/', label: 'Início' },
-        { href: '/servicos', label: 'Serviços' },
-        { href: '/sobre', label: 'Sobre' },
-        { href: '/contato', label: 'Contato' },
+        { href: '/servicos/', label: 'Serviços' },
+        { href: '/sobre/', label: 'Sobre' },
+        { href: '/contato/', label: 'Contato' },
     ]
 
     return (

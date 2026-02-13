@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Entre em Contato | Chris Chaves Chaveiro 24h',
     description: 'Fale com Chris Chaves agora. Atendimento 24 horas via WhatsApp ou telefone. Chaveiro emergencial em Porto Alegre e região.',
     alternates: {
-        canonical: 'https://chrischaves.com.br/contato',
+        canonical: 'https://chrischaves.com.br/contato/',
     },
 }
 

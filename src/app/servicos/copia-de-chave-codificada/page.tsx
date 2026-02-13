@@ -1,8 +1,13 @@
-
-'use client'
-
-import { motion } from 'framer-motion'
 import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Cópia de Chave Codificada em Porto Alegre | Chris Chaves',
+    description: 'Especialista em cópia e programação de chaves codificadas para veículos nacionais e importados em Porto Alegre. Scanner OBD2 e chips de alta qualidade.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-codificada/',
+    },
+}
 
 export default function CopiaChaveCodificadaPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20cópia%20de%20chave%20codificada"
@@ -44,10 +49,10 @@ export default function CopiaChaveCodificadaPage() {
             <ServiceJsonLd
                 name="Cópia de Chave Codificada em Porto Alegre"
                 description="Especialista em cópia e programação de chaves codificadas para veículos nacionais e importados em Porto Alegre. Scanner OBD2 e chips de alta qualidade."
-                url="https://chrischaves.com.br/servicos/copia-de-chave-codificada"
+                url="https://chrischaves.com.br/servicos/copia-de-chave-codificada/"
                 title='Cópia de Chave Codificada em Porto Alegre | Chris Chaves'
                 alternates={{
-                    canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-codificada',
+                    canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-codificada/',
                 }}
             />
             <script

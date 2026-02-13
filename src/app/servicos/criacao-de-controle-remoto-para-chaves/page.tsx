@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Criação de Controle Remoto para Chaves em Porto Alegre | Chris Chaves',
+    description: 'Precisa de um novo controle para seu veículo? Realizamos a criação e codificação de controles remotos automotivos em Porto Alegre. Atendimento especializado.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/criacao-de-controle-remoto-para-chaves/',
+    },
+}
 
 export default function CriacaoControleRemotoPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20criação%20de%20controle%20remoto"
@@ -41,6 +46,12 @@ export default function CriacaoControleRemotoPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-green-500/30 selection:text-green-400 font-sans">
+            <ServiceJsonLd
+                name="Criação de Controle Remoto para Chaves"
+                description="Serviço técnico de criação e pareamento de controles remotos automotivos em Porto Alegre."
+                url="https://chrischaves.com.br/servicos/criacao-de-controle-remoto-para-chaves/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/criacao-de-controle-remoto-para-chaves/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

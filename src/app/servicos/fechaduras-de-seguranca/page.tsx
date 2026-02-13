@@ -1,7 +1,14 @@
-
-'use client'
-
 import { businessInfo } from '@/data/businessInfo'
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Fechaduras de Segurança em Porto Alegre | Chris Chaves',
+    description: 'Instalação de fechaduras de alta segurança em Porto Alegre. Modelos anti-arrombamento, multiponto e blindados para sua proteção.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/fechaduras-de-seguranca/',
+    },
+}
 
 export default function SecurityLocksPage() {
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20tenho%20interesse%20em%20Fechaduras%20de%20Segurança`
@@ -82,9 +89,11 @@ export default function SecurityLocksPage() {
 
     return (
         <main className="min-h-screen bg-neutral-950 text-slate-200 selection:bg-green-900 selection:text-green-200 font-sans">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            <ServiceJsonLd
+                name="Fechaduras de Segurança em Porto Alegre"
+                description="Instalação especializada de fechaduras de alta segurança, multiponto e blindadas contra arrombamento."
+                url="https://chrischaves.com.br/servicos/fechaduras-de-seguranca/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/fechaduras-de-seguranca/' }}
             />
             <script
                 type="application/ld+json"

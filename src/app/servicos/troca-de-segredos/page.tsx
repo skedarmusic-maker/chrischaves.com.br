@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Troca de Segredos de Fechaduras em Porto Alegre | Chris Chaves',
+    description: 'Aumente a segurança do seu imóvel com a troca de segredos. Invalidamos chaves antigas sem trocar a fechadura. Atendimento rápido em Porto Alegre.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/troca-de-segredos/',
+    },
+}
 
 export default function TrocaSegredosPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20troca%20de%20segredo"
@@ -41,6 +46,12 @@ export default function TrocaSegredosPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-green-600/30 selection:text-green-500 font-sans">
+            <ServiceJsonLd
+                name="Troca de Segredos em Porto Alegre"
+                description="Alteramos a combinação interna da sua fechadura para invalidar chaves antigas. Segurança rápida e econômica para residências e empresas."
+                url="https://chrischaves.com.br/servicos/troca-de-segredos/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/troca-de-segredos/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

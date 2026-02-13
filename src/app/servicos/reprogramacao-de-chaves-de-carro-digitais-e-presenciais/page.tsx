@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Reprogramação de Chaves em Porto Alegre | Chris Chaves',
+    description: 'Especialista em reprogramação de chaves presenciais e digitais em Porto Alegre. Sincronização avançada entre chave e veículo para restaurar o acesso e funcionamento.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/reprogramacao-de-chaves-de-carro-digitais-e-presenciais/',
+    },
+}
 
 export default function ReprogramacaoChavesPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20reprogramar%20minha%20chave%20automotiva"
@@ -41,6 +46,12 @@ export default function ReprogramacaoChavesPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-cyan-500/30 selection:text-cyan-500 font-sans">
+            <ServiceJsonLd
+                name="Reprogramação de Chaves Digitais e Presenciais"
+                description="Sincronização técnica de chaves automotivas em Porto Alegre. Atendimento para chaves digitais e presenciais keyless."
+                url="https://chrischaves.com.br/servicos/reprogramacao-de-chaves-de-carro-digitais-e-presenciais/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/reprogramacao-de-chaves-de-carro-digitais-e-presenciais/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

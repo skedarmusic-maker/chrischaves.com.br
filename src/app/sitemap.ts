@@ -20,10 +20,10 @@ export default function sitemap() {
     // Static routes
     const routes = [
         '',
-        '/servicos',
-        '/servicos/chaveiro-emergencial',
-        '/sobre',
-        '/contato',
+        '/servicos/',
+        '/servicos/chaveiro-emergencial/',
+        '/sobre/',
+        '/contato/',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date().toISOString().split('T')[0],
@@ -31,7 +31,7 @@ export default function sitemap() {
 
     // Dynamic service routes
     const serviceRoutes = businessInfo.services.map((service) => ({
-        url: `${baseUrl}/servicos/${slugify(service)}`,
+        url: `${baseUrl}/servicos/${slugify(service)}/`,
         lastModified: new Date().toISOString().split('T')[0],
     }))
 

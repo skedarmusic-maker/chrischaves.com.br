@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: 'Serviços de Chaveiro 24h em Porto Alegre | Chris Chaves',
     description: 'Confira nossos serviços de chaveiro 24 horas: cópia de chaves, abertura de portas, chaves codificadas e mais. Atendimento emergencial em Porto Alegre e região.',
     alternates: {
-        canonical: 'https://chrischaves.com.br/servicos',
+        canonical: 'https://chrischaves.com.br/servicos/',
     },
 }
 

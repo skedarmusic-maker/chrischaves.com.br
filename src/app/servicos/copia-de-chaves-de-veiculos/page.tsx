@@ -1,8 +1,13 @@
-
-'use client'
-
-import { motion } from 'framer-motion'
 import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Cópia de Chaves de Veículos em Porto Alegre | Chris Chaves',
+    description: 'Cópia de chaves automotivas em Porto Alegre. Chaves canivete, presenciais e simples. Atendimento para todas as montadoras.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos/',
+    },
+}
 
 export default function CopiaChavesVeiculosPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20uma%20cópia%20da%20chave%20do%20meu%20carro"
@@ -45,9 +50,9 @@ export default function CopiaChavesVeiculosPage() {
                 title='Cópia de Chaves de Veículos em Porto Alegre | Chris Chaves'
                 description='Cópia de chaves automotivas em Porto Alegre. Chaves canivete, presenciais e simples. Atendimento para todas as montadoras.'
                 alternates={{
-                    canonical: 'https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos',
+                    canonical: 'https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos/',
                 }}
-                url="https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos"
+                url="https://chrischaves.com.br/servicos/copia-de-chaves-de-veiculos/"
             />
             <script
                 type="application/ld+json"

@@ -1,8 +1,13 @@
-
-'use client'
-
-import { motion } from 'framer-motion'
 import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Chave de Motocicleta em Porto Alegre | Chris Chaves',
+    description: 'Cópia e confecção de chaves para motos em Porto Alegre. Atendimento especializado para todas as marcas e modelos. Chaves codificadas e comuns.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/chave-de-motocicleta/',
+    },
+}
 
 export default function ChaveMotocicletaPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20ajuda%20com%20chave%20de%20moto"
@@ -44,8 +49,8 @@ export default function ChaveMotocicletaPage() {
             <ServiceJsonLd
                 name="Chave de Motocicleta em Porto Alegre"
                 description="Cópia e confecção de chaves para motos em Porto Alegre. Atendimento especializado para todas as marcas e modelos. Chaves codificadas e comuns."
-                url="https://chrischaves.com.br/servicos/chave-de-motocicleta"
-                alternates={{ canonical: 'https://chrischaves.com.br/servicos/chave-de-motocicleta' }}
+                url="https://chrischaves.com.br/servicos/chave-de-motocicleta/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/chave-de-motocicleta/' }}
             />
             <script
                 type="application/ld+json"

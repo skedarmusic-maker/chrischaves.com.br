@@ -1,8 +1,13 @@
-
-'use client'
-
-import { motion } from 'framer-motion'
 import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Chaveiro 24 Horas em Porto Alegre | Chris Chaves',
+    description: 'Serviço de chaveiro emergencial disponível 24 horas por dia em Porto Alegre e região metropolitana. Atendimento rápido para aberturas, cópias e trocas.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/chaveiro-24-horas/',
+    },
+}
 
 export default function Chaveiro24HorasPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20chaveiro%2024%20horas"
@@ -44,10 +49,10 @@ export default function Chaveiro24HorasPage() {
             <ServiceJsonLd
                 name="Chaveiro 24 Horas em Porto Alegre"
                 description="Serviço de chaveiro emergencial disponível 24 horas por dia em Porto Alegre e região metropolitana. Atendimento rápido para aberturas, cópias e trocas."
-                url="https://chrischaves.com.br/servicos/chaveiro-24-horas"
+                url="https://chrischaves.com.br/servicos/chaveiro-24-horas/"
                 title='Chaveiro 24 Horas em Porto Alegre | Chris Chaves'
                 alternates={{
-                    canonical: 'https://chrischaves.com.br/servicos/chaveiro-24-horas',
+                    canonical: 'https://chrischaves.com.br/servicos/chaveiro-24-horas/',
                 }}
             />
             <script

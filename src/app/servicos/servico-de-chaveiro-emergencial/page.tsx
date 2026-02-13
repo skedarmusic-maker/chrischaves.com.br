@@ -1,8 +1,13 @@
-
-'use client'
-
-import { motion } from 'framer-motion'
 import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Serviço de Chaveiro Emergencial em Porto Alegre | Chris Chaves',
+    description: 'Atendimento de chaveiro emergencial rápido em Porto Alegre. Socorro imediato para portas trancadas, chaves perdidas ou quebradas.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/servico-de-chaveiro-emergencial/',
+    },
+}
 
 export default function ChaveiroEmergencialPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Emergência:%20Preciso%20de%20chaveiro%20agora"
@@ -44,7 +49,10 @@ export default function ChaveiroEmergencialPage() {
             <ServiceJsonLd
                 name="Serviço de Chaveiro Emergencial em Porto Alegre"
                 description="Atendimento de chaveiro emergencial rápido em Porto Alegre. Socorro imediato para portas trancadas, chaves perdidas ou quebradas."
-                url="https://chrischaves.com.br/servicos/servico-de-chaveiro-emergencial"
+                url="https://chrischaves.com.br/servicos/servico-de-chaveiro-emergencial/"
+                alternates={{
+                    canonical: 'https://chrischaves.com.br/servicos/servico-de-chaveiro-emergencial/',
+                }}
             />
             <script
                 type="application/ld+json"

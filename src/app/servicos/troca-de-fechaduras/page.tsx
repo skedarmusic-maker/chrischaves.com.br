@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Troca de Fechaduras em Porto Alegre | Chris Chaves',
+    description: 'Substituição e instalação de fechaduras residenciais e comerciais em Porto Alegre. Modelos de alta segurança e atendimento especializado.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/troca-de-fechaduras/',
+    },
+}
 
 export default function TrocaFechadurasPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20trocar%20uma%20fechadura"
@@ -40,7 +45,13 @@ export default function TrocaFechadurasPage() {
     }
 
     return (
-        <main className="min-h-screen bg-black text-gray-200 selection:bg-green-500/30 selection:text-green-500 font-sans">
+        <main className="min-h-screen bg-black text-gray-200 selection:bg-green-600/30 selection:text-green-500 font-sans">
+            <ServiceJsonLd
+                name="Troca de Fechaduras em Porto Alegre"
+                description="Serviço profissional de troca e instalação de fechaduras em Porto Alegre. Trabalhamos com as melhores marcas para garantir sua segurança."
+                url="https://chrischaves.com.br/servicos/troca-de-fechaduras/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/troca-de-fechaduras/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

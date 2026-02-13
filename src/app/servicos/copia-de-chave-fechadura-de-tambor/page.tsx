@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Cópia de Chave de Fechadura de Tambor em Porto Alegre | Chris Chaves',
+    description: 'Realizamos cópias de chaves para fechaduras de tambor (Yale) em Porto Alegre. Atendimento rápido e precisão para garantir o giro suave.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-fechadura-de-tambor/',
+    },
+}
 
 export default function CopiaChaveTamborPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20cópia%20de%20chave%20de%20tambor"
@@ -41,6 +46,12 @@ export default function CopiaChaveTamborPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-amber-600/30 selection:text-amber-500 font-sans">
+            <ServiceJsonLd
+                name="Cópia de Chave de Fechadura de Tambor"
+                description="Serviço de duplicação de chaves Yale comuns para fechaduras de cilindro em Porto Alegre."
+                url="https://chrischaves.com.br/servicos/copia-de-chave-fechadura-de-tambor/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-fechadura-de-tambor/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

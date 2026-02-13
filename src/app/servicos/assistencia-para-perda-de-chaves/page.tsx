@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Assistência para Perda de Chaves em Porto Alegre | Chris Chaves',
+    description: 'Perdeu suas chaves? Oferecemos assistência rápida para abertura de portas e confecção de novas chaves em Porto Alegre. Atendimento emergencial.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/assistencia-para-perda-de-chaves/',
+    },
+}
 
 export default function PerdaDeChavesPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Emergência:%20Perdi%20minhas%20chaves%20e%20preciso%20de%20acesso"
@@ -41,6 +46,12 @@ export default function PerdaDeChavesPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-green-500/30 selection:text-green-500 font-sans">
+            <ServiceJsonLd
+                name="Assistência para Perda de Chaves"
+                description="Soluções rápidas para quem perdeu as chaves. Abertura técnica e suporte especializado em Porto Alegre."
+                url="https://chrischaves.com.br/servicos/assistencia-para-perda-de-chaves/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/assistencia-para-perda-de-chaves/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

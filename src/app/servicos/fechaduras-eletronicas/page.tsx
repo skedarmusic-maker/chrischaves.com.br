@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Fechaduras Eletrônicas em Porto Alegre | Chris Chaves',
+    description: 'Modernize o acesso ao seu imóvel com fechaduras eletrônicas. Instalação de modelos com biometria, senha e tag em Porto Alegre.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/fechaduras-eletronicas/',
+    },
+}
 
 export default function FechadurasEletronicasPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20tenho%20interesse%20em%20fechaduras%20eletrônicas"
@@ -41,6 +46,12 @@ export default function FechadurasEletronicasPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-teal-500/30 selection:text-teal-400 font-sans">
+            <ServiceJsonLd
+                name="Fechaduras Eletrônicas em Porto Alegre"
+                description="Serviços de instalação e manutenção de fechaduras digitais e eletrônicas em Porto Alegre. Praticidade e tecnologia para sua segurança."
+                url="https://chrischaves.com.br/servicos/fechaduras-eletronicas/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/fechaduras-eletronicas/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

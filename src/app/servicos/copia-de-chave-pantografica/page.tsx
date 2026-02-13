@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Cópia de Chave Pantográfica em Porto Alegre | Chris Chaves',
+    description: 'Especialista em cópia de chaves pantográficas para veículos e residências em Porto Alegre. Duplicação de alta precisão com máquinas CNC.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-pantografica/',
+    },
+}
 
 export default function CopiaChavePantograficaPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20cópia%20de%20chave%20pantográfica"
@@ -41,6 +46,12 @@ export default function CopiaChavePantograficaPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-white/30 selection:text-white font-sans">
+            <ServiceJsonLd
+                name="Cópia de Chave Pantográfica"
+                description="Serviço técnico de duplicação de chaves pantográficas em Porto Alegre com precisão milimétrica."
+                url="https://chrischaves.com.br/servicos/copia-de-chave-pantografica/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-pantografica/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

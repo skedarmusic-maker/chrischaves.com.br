@@ -1,8 +1,13 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
 
-'use client'
-
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+export const metadata: Metadata = {
+    title: 'Cópia de Chave Magnética em Porto Alegre | Chris Chaves',
+    description: 'Duplicação de tags e cartões de acesso magnéticos (RFID) em Porto Alegre. Agilidade e compatibilidade para condomínios e empresas.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-magnetica/',
+    },
+}
 
 export default function CopiaChaveMagneticaPage() {
     const whatsappLink = "https://wa.me/5551993398664?text=Olá,%20preciso%20de%20cópia%20de%20chave%20magnética"
@@ -41,6 +46,12 @@ export default function CopiaChaveMagneticaPage() {
 
     return (
         <main className="min-h-screen bg-black text-gray-200 selection:bg-emerald-500/30 selection:text-emerald-500 font-sans">
+            <ServiceJsonLd
+                name="Cópia de Chave Magnética"
+                description="Serviço de clonagem de tags e dispositivos de acesso RFID em Porto Alegre."
+                url="https://chrischaves.com.br/servicos/copia-de-chave-magnetica/"
+                alternates={{ canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-magnetica/' }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
