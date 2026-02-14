@@ -29,7 +29,15 @@ export default function ServicesPage() {
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20vi%20o%20site%20e%20preciso%20de%20atendimento.`
 
     return (
-        <main className="min-h-screen bg-black text-white pb-20">
+        <main className="min-h-screen bg-black text-gray-200 selection:bg-cyan-500/30 selection:text-cyan-500 font-sans pb-20">
+            {/* Semantic SEO Content */}
+            <div className="sr-only">
+                <h1>Serviços de Chaveiro em Porto Alegre - Lista Completa</h1>
+                <p>
+                    Confira a lista completa de serviços oferecidos pela Chris Chaves Chaveiro 24h.
+                    Atendemos emergências, cópias de chaves automotivas, residenciais e empresariais em toda a grande Porto Alegre.
+                </p>
+            </div>
             <LocalBusinessJsonLd />
             <ServiceListJsonLd />
             {/* Header Section */}

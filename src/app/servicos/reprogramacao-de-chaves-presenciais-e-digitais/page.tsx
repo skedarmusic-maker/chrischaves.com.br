@@ -2,8 +2,8 @@ import { ServiceJsonLd } from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Reprogramação de Chaves em Porto Alegre | Chris Chaves',
-    description: 'Especialista em reprogramação de chaves presenciais e digitais em Porto Alegre. Restabelecemos a comunicação da sua chave com o veículo.',
+    title: 'Reprogramação de Chaves Presenciais e Keyless | Chris Chaves',
+    description: 'Serviço especializado em chaves presenciais (Smart Key) e sistemas Keyless em Porto Alegre. Recuperação de acesso e codificação avançada.',
     alternates: {
         canonical: 'https://chrischaves.com.br/servicos/reprogramacao-de-chaves-presenciais-e-digitais/',
     },
