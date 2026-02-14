@@ -21,7 +21,6 @@ export default function sitemap() {
     const routes = [
         '',
         '/servicos/',
-        '/servicos/chaveiro-emergencial/',
         '/sobre/',
         '/contato/',
     ].map((route) => ({
