@@ -32,7 +32,6 @@ export default function ServicesPage() {
         <main className="min-h-screen bg-black text-gray-200 selection:bg-cyan-500/30 selection:text-cyan-500 font-sans pb-20">
             {/* Semantic SEO Content */}
             <div className="sr-only">
-                <h1>Serviços de Chaveiro em Porto Alegre - Lista Completa</h1>
                 <p>
                     Confira a lista completa de serviços oferecidos pela Chris Chaves Chaveiro 24h.
                     Atendemos emergências, cópias de chaves automotivas, residenciais e empresariais em toda a grande Porto Alegre.

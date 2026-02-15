@@ -14,7 +14,6 @@ export default function Home() {
         <main className="min-h-screen bg-black overflow-x-hidden">
             {/* Semantic SEO Content - Visible to bots and users */}
             <div className="sr-only">
-                <h1>Chaveiro 24 Horas em Porto Alegre - Chris Chaves</h1>
                 <p>
                     Chris Chaves é a sua referência em serviços de chaveiro 24 horas em Porto Alegre e região metropolitana.
                     Especialistas em abertura de carros, cópias de chaves codificadas, abertura de cofres e fechaduras eletrônicas.
