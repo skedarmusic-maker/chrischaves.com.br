@@ -26,7 +26,8 @@ export const businessInfo = {
         "Gravataí",
         "Alvorada"
     ],
-    description: "Chris Chaves 24h é uma empresa com anos de experiência e qualificação, especializada no segmento de chaveiro e com foco em atendimento emergencial 24h. Realizamos os serviços de: cópias e confecções de chaves automotivas nacionais e importadas; troca de segredos; cópias de chaves em geral; cópias de controles em geral; confecções de carimbos; conserto de fechaduras; troca de baterias; controle de portões e muito mais! Atuamos 24 horas! Atendemos toda a região de Porto Alegre! Faça contato agora mesmo via WhatsApp!",
+    description: "Trancado do lado de fora? Perdeu a chave do carro? Chaveiro 24h em Porto Alegre com atendimento imediato. Abertura segura e cópias codificadas. Chame Agora!",
+    seoTitle: "Chaveiro 24h em Porto Alegre Atendimento Rápido | Chegamos em Minutos",
     services: [
         "Serviço de chaveiro emergencial",
         "Assistência para perda de chaves",

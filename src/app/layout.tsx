@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
     metadataBase: new URL('https://chrischaves.com.br'),
     title: {
-        default: "Chaveiro 24 Horas em Porto Alegre | Chris Chaves",
+        default: businessInfo.seoTitle,
         template: '%s | Chris Chaves'
     },
     description: businessInfo.description,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         locale: 'pt_BR',
         url: 'https://chrischaves.com.br',
         siteName: 'Chris Chaves | Chaveiro 24h',
-        title: 'Chaveiro 24 Horas em Porto Alegre | Chris Chaves',
+        title: businessInfo.seoTitle,
         description: businessInfo.description,
         images: [
             {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Chaveiro 24 Horas em Porto Alegre | Chris Chaves',
+        title: businessInfo.seoTitle,
         description: businessInfo.description,
         images: ['/logo.png'], // Using logo as default
     },

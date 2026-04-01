@@ -32,9 +32,9 @@ export function Hero() {
                 </h1>
 
                 {/* Description/Address */}
-                <p className="text-neutral-400 max-w-2xl mb-2 text-lg">
-                    {businessInfo.address}
-                </p>
+                <h2 className="text-neutral-400 max-w-2xl mb-2 text-xl font-medium">
+                    Perdeu a chave ou ficou trancado? Atendimento 24h em Porto Alegre. Chegamos rápido! Ligue agora e resolva na hora.
+                </h2>
 
                 {/* CTA Section */}
                 <div className="mt-10 flex flex-col md:flex-row gap-4 w-full justify-center items-center">
