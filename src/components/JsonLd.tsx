@@ -57,7 +57,7 @@ export function LocalBusinessJsonLd() {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": service
+                    "name": service.name
                 }
             }))
         }
@@ -74,7 +74,7 @@ export function LocalBusinessJsonLd() {
 export function ServiceListJsonLd() {
     const services = businessInfo.services.map((service) => ({
         "@type": "Service",
-        "name": service,
+        "name": service.name,
         "provider": {
             "@type": "LocalBusiness",
             "name": businessInfo.name,
@@ -93,7 +93,7 @@ export function ServiceListJsonLd() {
             "@type": "City",
             "name": "Porto Alegre"
         },
-        "url": `${businessInfo.siteUrl}/servicos/${service.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-')}`
+        "url": `${businessInfo.siteUrl}/servicos/${service.slug}/`
     }))
 
     const jsonLd = {

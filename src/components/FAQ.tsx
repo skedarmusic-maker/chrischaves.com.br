@@ -13,19 +13,19 @@ const questions = [
     },
     {
         question: "Quanto tempo demora para chegar?",
-        answer: "Nosso foco é o atendimento emergencial e buscamos chegar o mais rápido possível. O tempo exato depende da sua localização e do trânsito no momento. Entre em contato via WhatsApp para uma estimativa em tempo real."
+        answer: "Nossa meta é o atendimento ultra-rápido. Em Porto Alegre, nossa equipe leva em média de 20 a 25 minutos para chegar até você, dependendo do trânsito. Atendimento emergencial priorizado!"
     },
     {
         question: "Vocês fazem cópia de chave codificada automotiva?",
-        answer: "Sim, realizamos cópias e confecções de chaves automotivas nacionais e importadas, incluindo chaves codificadas e presenciais."
+        answer: "Sim! Somos especialistas em chaves codificadas de todas as marcas (nacionais e importadas). Fazemos a programação e o corte da lâmina no local, sem que você precise guinchar o carro."
     },
     {
         question: "Aceitam quais formas de pagamento?",
-        answer: "Trabalhamos com diversas formas de pagamento para sua comodidade. Consulte as opções disponíveis diretamente com nosso técnico ou pelo WhatsApp."
+        answer: "Facilitamos para você: aceitamos Cartões de Crédito e Débito (parcelamos se necessário), PIX e Dinheiro."
     },
     {
         question: "Como faço para solicitar um orçamento?",
-        answer: "É muito simples! Basta clicar no botão de WhatsApp aqui no site ou ligar para (51) 99339-8664 que passaremos todas as informações necessárias."
+        answer: "É rápido e sem compromisso! Chame agora no WhatsApp ou ligue para (51) 99339-8664. Envie uma foto da fechadura ou do modelo do carro para um orçamento exato e sem surpresas."
     }
 ]
 

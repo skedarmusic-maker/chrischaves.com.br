@@ -26,14 +26,14 @@ export function Hero() {
 
                 {/* H1 Title - Mandatory Requirement */}
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 max-w-4xl">
-                    Chaveiro 24 horas em <br className="hidden md:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Porto Alegre</span>
-                    <span className="block text-2xl md:text-4xl mt-4 text-neutral-400 font-medium">– Chris Chaves</span>
+                    Chaveiro 24 horas <br className="hidden md:block" />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Chegamos em 20 min</span>
+                    <span className="block text-2xl md:text-4xl mt-4 text-neutral-400 font-medium">Porto Alegre e Região – Chris Chaves</span>
                 </h1>
 
                 {/* Description/Address */}
                 <h2 className="text-neutral-400 max-w-2xl mb-2 text-xl font-medium">
-                    Perdeu a chave ou ficou trancado? Atendimento 24h em Porto Alegre. Chegamos rápido! Ligue agora e resolva na hora.
+                    🆘 <span className="text-white font-bold">Não fique na rua!</span> Atendimento especializado para casas, carros e empresas. Preço justo, rapidez e confiança. ⭐ <span className="text-green-400">5.0 (35+ avaliações)</span>
                 </h2>
 
                 {/* CTA Section */}

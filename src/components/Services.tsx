@@ -27,7 +27,7 @@ export function Services() {
                                     </svg>
                                 </div>
                                 <h3 className="text-gray-200 font-medium group-hover:text-white transition-colors">
-                                    {service}
+                                    {service.name}
                                 </h3>
                             </div>
                         </div>

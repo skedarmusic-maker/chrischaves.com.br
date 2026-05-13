@@ -13,17 +13,7 @@ export const metadata: Metadata = {
 
 import { ServiceListJsonLd } from '@/components/JsonLd'
 
-function slugify(text: string) {
-    return text
-        .toString()
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .trim()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w-]+/g, '')
-        .replace(/--+/g, '-')
-}
+
 
 export default function ServicesPage() {
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20vi%20o%20site%20e%20preciso%20de%20atendimento.`
@@ -82,7 +72,7 @@ export default function ServicesPage() {
             <section className="container mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {businessInfo.services.map((service, index) => {
-                        const slug = slugify(service)
+                        const slug = service.slug
 
                         return (
                             <div
@@ -97,11 +87,11 @@ export default function ServicesPage() {
                                     </div>
 
                                     <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
-                                        {service}
+                                        {service.name}
                                     </h3>
 
                                     <p className="text-neutral-500 text-sm mb-6">
-                                        Solução profissional e rápida para {service.toLowerCase()}. Conte com nossa equipe especializada.
+                                        Solução profissional e rápida para {service.name.toLowerCase()}. Conte com nossa equipe especializada.
                                     </p>
                                 </div>
 
