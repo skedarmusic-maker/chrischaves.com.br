@@ -2,7 +2,7 @@ import { businessInfo } from '@/data/businessInfo'
 import { Metadata, Route } from 'next'
 
 // Utilities for slug conversion
-
+// Last deployment trigger: 2026-05-14
 
 export default function sitemap() {
     const baseUrl = 'https://chrischaves.com.br' // Replace with actual domain when live
