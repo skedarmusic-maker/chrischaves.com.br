@@ -13,6 +13,7 @@ export default function sitemap() {
         '/servicos/',
         '/sobre/',
         '/contato/',
+        '/chaveiro-24h-petropolis-porto-alegre/',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date().toISOString().split('T')[0],

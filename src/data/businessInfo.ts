@@ -21,6 +21,7 @@ export const businessInfo = {
     ],
     areaServed: [
         "Porto Alegre",
+        "Bairro Petrópolis (Porto Alegre)",
         "Canoas",
         "Viamão",
         "Gravataí",

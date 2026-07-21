@@ -110,6 +110,26 @@ export default function ServicesPage() {
                 </div>
             </section>
 
+            {/* Regional Neighborhoods Section */}
+            <section className="container mx-auto px-4 py-12 border-t border-neutral-900">
+                <div className="bg-neutral-950/60 border border-neutral-800 rounded-xl p-8">
+                    <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                        <span className="text-green-500">📍</span> Atendimento Regional por Bairros em Porto Alegre
+                    </h2>
+                    <p className="text-neutral-400 text-sm mb-6 max-w-3xl">
+                        Além de atender todas as regiões da capital e grande Porto Alegre, possuímos páginas dedicadas de atendimento emergencial rápido para bairros estratégicos:
+                    </p>
+                    <div className="flex flex-wrap gap-4">
+                        <Link
+                            href="/chaveiro-24h-petropolis-porto-alegre/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>🏙️</span> Chaveiro 24h Bairro Petrópolis →
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             {/* Bottom CTA */}
             <section className="container mx-auto px-4 py-8">
                 <div className="bg-neutral-900 rounded-2xl p-8 md:p-12 text-center border border-neutral-800">

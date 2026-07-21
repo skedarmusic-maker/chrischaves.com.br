@@ -1,4 +1,5 @@
 import { businessInfo } from '@/data/businessInfo'
+import Link from 'next/link'
 
 export function Location() {
     return (
@@ -19,7 +20,26 @@ export function Location() {
                     Nossa unidade móvel está preparada para chegar até você com rapidez e segurança em qualquer bairro da capital e região metropolitana.
                 </p>
 
-                <div className="inline-block px-6 py-3 border border-neutral-700 rounded-lg bg-neutral-800/50 text-neutral-300">
+                {/* Regional Pages Links */}
+                <div className="flex flex-wrap justify-center gap-3 mb-8 max-w-3xl mx-auto">
+                    <Link
+                        href="/chaveiro-24h-petropolis-porto-alegre/"
+                        className="px-4 py-2 bg-green-950/40 border border-green-500/40 hover:border-green-500 text-green-400 font-bold rounded-full text-sm transition-all duration-200 flex items-center gap-2 hover:scale-105"
+                    >
+                        <span>📍</span> Chaveiro 24h Bairro Petrópolis
+                    </Link>
+                    <span className="px-4 py-2 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded-full text-sm">
+                        Jardim Dona Leopoldina (Sede)
+                    </span>
+                    <span className="px-4 py-2 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded-full text-sm">
+                        Passo d'Areia / Cristo Redentor
+                    </span>
+                    <span className="px-4 py-2 bg-neutral-800 border border-neutral-700 text-neutral-300 rounded-full text-sm">
+                        Rubem Berta & Zona Norte
+                    </span>
+                </div>
+
+                <div className="inline-block px-6 py-3 border border-neutral-700 rounded-lg bg-neutral-800/50 text-neutral-300 text-sm">
                     <span className="text-green-500 font-bold mr-2">📍</span>
                     Base: {businessInfo.address}
                 </div>

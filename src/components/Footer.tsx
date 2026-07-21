@@ -1,16 +1,17 @@
 import { businessInfo } from '@/data/businessInfo'
+import Link from 'next/link'
 
 export function Footer() {
     return (
         <footer className="bg-black border-t border-neutral-900 pt-16 pb-8">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
                     {/* Brand */}
                     <div>
                         <h3 className="text-xl font-bold text-white mb-4">Chris Chaves 24h</h3>
-                        <p className="text-neutral-500 mb-6">
-                            Sua segurança e tranquilidade em primeiro lugar. Atendimento qualificado dia e noite.
+                        <p className="text-neutral-500 mb-6 text-sm">
+                            Sua segurança e tranquilidade em primeiro lugar. Atendimento qualificado dia e noite em Porto Alegre e região.
                         </p>
                         <div className="flex gap-4">
                             <a
@@ -27,19 +28,35 @@ export function Footer() {
                         </div>
                     </div>
 
+                    {/* Regiões & Bairros */}
+                    <div>
+                        <h4 className="text-white font-semibold mb-4">Regiões Atendidas</h4>
+                        <ul className="space-y-2 text-neutral-400 text-sm">
+                            <li>
+                                <Link href="/chaveiro-24h-petropolis-porto-alegre/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Bairro Petrópolis (24h)
+                                </Link>
+                            </li>
+                            <li className="text-neutral-500">Jardim Dona Leopoldina</li>
+                            <li className="text-neutral-500">Passo d'Areia / Cristo Redentor</li>
+                            <li className="text-neutral-500">Rubem Berta & Zona Norte</li>
+                            <li className="text-neutral-500">Canoas, Viamão e Gravataí</li>
+                        </ul>
+                    </div>
+
                     {/* Contact */}
                     <div>
                         <h4 className="text-white font-semibold mb-4">Contato</h4>
-                        <ul className="space-y-3 text-neutral-500">
+                        <ul className="space-y-3 text-neutral-500 text-sm">
                             <li>
-                                <a href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`} className="hover:text-green-500 text-lg">
+                                <a href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`} className="hover:text-green-500 text-lg font-bold text-white">
                                     {businessInfo.phone}
                                 </a>
                             </li>
-                            <li className="text-sm">
+                            <li>
                                 {businessInfo.hours}
                             </li>
-                            <li className="text-sm">
+                            <li>
                                 <a
                                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(businessInfo.plusCode)}`}
                                     target="_blank"
@@ -54,7 +71,7 @@ export function Footer() {
 
                     {/* Address */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4">Endereço</h4>
+                        <h4 className="text-white font-semibold mb-4">Matriz / Sede</h4>
                         <p className="text-neutral-500 text-sm leading-relaxed">
                             {businessInfo.address}
                         </p>
