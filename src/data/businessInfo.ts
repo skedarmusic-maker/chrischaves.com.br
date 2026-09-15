@@ -22,6 +22,10 @@ export const businessInfo = {
     areaServed: [
         "Porto Alegre",
         "Bairro Petrópolis (Porto Alegre)",
+        "Jardim Dona Leopoldina (Porto Alegre)",
+        "Rubem Berta (Porto Alegre)",
+        "Passo d'Areia (Porto Alegre)",
+        "Cristo Redentor (Porto Alegre)",
         "Canoas",
         "Viamão",
         "Gravataí",

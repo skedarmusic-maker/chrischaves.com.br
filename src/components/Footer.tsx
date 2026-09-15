@@ -33,13 +33,21 @@ export function Footer() {
                         <h4 className="text-white font-semibold mb-4">Regiões Atendidas</h4>
                         <ul className="space-y-2 text-neutral-400 text-sm">
                             <li>
+                                <Link href="/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Leopoldina / Rubem Berta (Matriz)
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/chaveiro-24h-passo-d-areia-cristo-redentor/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Passo d'Areia / Cristo Redentor
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/chaveiro-24h-petropolis-porto-alegre/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
                                     <span>📍</span> Bairro Petrópolis (24h)
                                 </Link>
                             </li>
-                            <li className="text-neutral-500">Jardim Dona Leopoldina</li>
-                            <li className="text-neutral-500">Passo d'Areia / Cristo Redentor</li>
-                            <li className="text-neutral-500">Rubem Berta & Zona Norte</li>
+                            <li className="text-neutral-500">Zona Norte de Porto Alegre</li>
                             <li className="text-neutral-500">Canoas, Viamão e Gravataí</li>
                         </ul>
                     </div>

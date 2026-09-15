@@ -1,0 +1,462 @@
+import { ServiceJsonLd } from '@/components/JsonLd'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+    title: 'Chaveiro 24 Horas Jardim Dona Leopoldina e Rubem Berta | Chris Chaves',
+    description: 'Chaveiro 24h no Jardim Dona Leopoldina e Rubem Berta em Porto Alegre. Atendimento mais rápido da Zona Norte em 5 a 10 min. Aberturas, fechaduras e socorro automotivo.',
+    alternates: {
+        canonical: 'https://chrischaves.com.br/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/',
+    },
+    openGraph: {
+        title: 'Chaveiro 24 Horas Jardim Dona Leopoldina e Rubem Berta | Porto Alegre',
+        description: 'Chaveiro 24 horas na Zona Norte de Porto Alegre. Atendimento em 5 a 10 minutos na Av. Baltazar de Oliveira Garcia, Manoel Elias e Karl Iwers. Ligue já!',
+        url: 'https://chrischaves.com.br/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/',
+        type: 'website',
+        locale: 'pt_BR',
+        images: [
+            {
+                url: '/images/im/fechadura-digital-instalacao-1.jpeg',
+                width: 1200,
+                height: 630,
+                alt: 'Chaveiro 24 Horas no Jardim Dona Leopoldina e Rubem Berta',
+            },
+        ],
+    },
+}
+
+export default function ChaveiroLeopoldinaRubemBertaPage() {
+    const whatsappLink = "https://wa.me/5551993398664?text=Olá!%20Estou%20no%20Jardim%20Dona%20Leopoldina%20/%20Rubem%20Berta%20e%20preciso%20de%20chaveiro%20urgente."
+    const phoneLink = "tel:51993398664"
+
+    const faqData = [
+        {
+            question: "Quanto tempo o chaveiro demora para chegar no Jardim Dona Leopoldina e Rubem Berta?",
+            answer: "Nosso tempo médio de chegada é de apenas 5 a 10 minutos. Nossa matriz física está localizada na Av. Karl Iwers, 1800, no próprio Jardim Dona Leopoldina, garantindo o atendimento emergencial mais rápido de toda a Zona Norte de Porto Alegre."
+        },
+        {
+            question: "Atendem emergências na Av. Baltazar de Oliveira Garcia e Av. Manoel Elias?",
+            answer: "Sim! Prestamos atendimento 24 horas com unidade móvel em toda a extensão da Av. Baltazar de Oliveira Garcia, Av. Manoel Elias, Av. Juscelino Kubitschek de Oliveira e transversais residenciais e comerciais."
+        },
+        {
+            question: "Vocês fazem abertura de porta residencial sem arrombar ou estragar a fechadura?",
+            answer: "Com certeza. Nossos chaveiros são equipados com michas profissionais e ferramentas decodificadoras que realizam a abertura técnica 100% limpa, sem danificar a fechadura, o cilindro ou o batente da porta."
+        },
+        {
+            question: "Como funciona o socorro automotivo para carros trancados na região?",
+            answer: "Despachamos a unidade móvel com compressor regulado e chaves pantográficas para abertura não destrutiva do veículo. Se você perdeu a chave, confeccionamos e reprogramamos o chip codificado na hora no próprio local."
+        },
+        {
+            question: "Quais são as formas de pagamento aceitas pelo chaveiro?",
+            answer: "Aceitamos Pix, cartões de crédito e débito de todas as bandeiras (com máquina móvel levada até você) e dinheiro. O valor é informado de forma transparente antes do deslocamento."
+        }
+    ];
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqData.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    }
+
+    const localBusinessJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Locksmith",
+        "name": "Chris Chaves | Chaveiro 24 Horas Jardim Dona Leopoldina e Rubem Berta",
+        "description": "Chaveiro 24 horas no Jardim Dona Leopoldina e Rubem Berta em Porto Alegre. Matriz na Av. Karl Iwers com atendimento imediato em 5 a 10 minutos na Zona Norte.",
+        "telephone": "(51) 99339-8664",
+        "url": "https://chrischaves.com.br/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/",
+        "areaServed": [
+            {
+                "@type": "AdministrativeArea",
+                "name": "Jardim Dona Leopoldina, Porto Alegre - RS"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Rubem Berta, Porto Alegre - RS"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Zona Norte, Porto Alegre - RS"
+            }
+        ],
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Karl Iwers, 1800",
+            "addressLocality": "Porto Alegre",
+            "addressRegion": "RS",
+            "postalCode": "91230-570",
+            "addressCountry": "BR"
+        }
+    }
+
+    return (
+        <main className="min-h-screen bg-black text-gray-200 selection:bg-green-500/30 selection:text-green-500 font-sans">
+            <ServiceJsonLd
+                name="Chaveiro 24 Horas Jardim Dona Leopoldina e Rubem Berta Porto Alegre"
+                description="Serviço de chaveiro 24h no Jardim Dona Leopoldina e Rubem Berta. Atendimento em 5 a 10 min com base própria na Av. Karl Iwers. Aberturas, chaves codificadas e fechaduras digitais."
+                url="https://chrischaves.com.br/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/"
+                title="Chaveiro 24 Horas Jardim Dona Leopoldina e Rubem Berta | Chris Chaves"
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+            />
+
+            {/* 1. HERO SECTION */}
+            <section className="relative pt-32 pb-20 border-b border-neutral-800 overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.12),transparent_70%)] pointer-events-none" />
+                <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent" />
+
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="flex flex-col lg:flex-row gap-12 items-center">
+
+                        {/* LEFT CONTENT */}
+                        <div className="flex-1 space-y-6">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 text-xs font-mono tracking-widest uppercase">
+                                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                                Matriz na Av. Karl Iwers • Chegada em 5 a 10 Minutos
+                            </div>
+
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-white leading-[1.1]">
+                                CHAVEIRO 24 HORAS <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400">
+                                    LEOPOLDINA & RUBEM BERTA
+                                </span>
+                            </h1>
+
+                            <h2 className="text-lg text-green-400 font-mono uppercase tracking-widest">
+                                O Chaveiro Mais Próximo de Você na Zona Norte de Porto Alegre
+                            </h2>
+
+                            <p className="text-lg md:text-xl text-neutral-300 leading-relaxed">
+                                Ficou trancado para fora de casa, a chave quebrou no miolo ou o carro trancou com a chave na ignição? Como nossa base física fica na <strong className="text-white">Av. Karl Iwers</strong>, nosso técnico chega ao seu endereço no <strong className="text-white">Jardim Dona Leopoldina e Rubem Berta em menos de 10 minutos</strong>.
+                            </p>
+
+                            <div className="flex flex-wrap gap-4 pt-2">
+                                <a
+                                    href={whatsappLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group relative inline-flex items-center justify-center px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-bold text-lg tracking-wide uppercase transition-all duration-200 shadow-[0_0_30px_rgba(34,197,94,0.4)] rounded-sm"
+                                >
+                                    <span className="mr-3">Chamar Chaveiro Agora</span>
+                                    <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </a>
+
+                                <a
+                                    href={phoneLink}
+                                    className="inline-flex items-center justify-center px-6 py-4 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-green-500 text-white font-semibold text-base uppercase tracking-wider transition-colors rounded-sm"
+                                >
+                                    Ligar: (51) 99339-8664
+                                </a>
+                            </div>
+
+                            <div className="pt-4 flex flex-wrap items-center gap-6 text-xs font-mono text-neutral-400 border-t border-neutral-800">
+                                <span className="flex items-center gap-2">
+                                    <span className="text-green-500 font-bold">✓</span> Chegada em 5-10 min
+                                </span>
+                                <span className="flex items-center gap-2">
+                                    <span className="text-green-500 font-bold">✓</span> Abertura sem estragar a porta
+                                </span>
+                                <span className="flex items-center gap-2">
+                                    <span className="text-green-500 font-bold">✓</span> Aceita Pix e Cartão
+                                </span>
+                                <span className="flex items-center gap-2">
+                                    <span className="text-green-500 font-bold">✓</span> Plantão 24h real
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* RIGHT IMAGE */}
+                        <div className="w-full lg:w-[480px] relative">
+                            <div className="relative rounded-sm overflow-hidden border border-neutral-800 shadow-2xl group">
+                                <Image
+                                    src="/images/im/fechadura-digital-instalacao-1.jpeg"
+                                    alt="Instalação de Fechaduras e Abertura no Jardim Dona Leopoldina e Rubem Berta"
+                                    width={600}
+                                    height={450}
+                                    className="object-cover w-full h-[400px] group-hover:scale-105 transition-transform duration-700"
+                                    priority
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                                <div className="absolute bottom-4 left-4 right-4 bg-black/90 backdrop-blur-md p-4 border border-neutral-800 rounded-sm">
+                                    <div className="text-xs font-mono text-green-400 uppercase font-bold">Matriz Local Zona Norte</div>
+                                    <div className="text-white font-bold text-base">Atendimento Rápido na Leopoldina e Rubem Berta</div>
+                                    <div className="text-neutral-400 text-xs mt-1">Aberturas residenciais, automotivas e instalação profissional de fechaduras digitais no local.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* 2. ROTAS E LOGÍSTICA DE ATENDIMENTO HIPERLOCAL */}
+            <section className="py-20 bg-neutral-950 border-b border-neutral-900">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="text-center mb-12">
+                        <span className="text-green-500 font-mono text-xs uppercase tracking-widest block mb-2">// ATENDIMENTO HIPERLOCAL IMEDIATO</span>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">
+                            Vias Principais com Chegada em Minutos
+                        </h2>
+                        <p className="text-neutral-400 max-w-2xl mx-auto mt-3 text-sm md:text-base">
+                            Por estarmos sediados diretamente no bairro, nossos técnicos não enfrentam trânsito pesado para socorrer você nos principais eixos da região.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="bg-black/70 border border-neutral-800 p-6 rounded-sm space-y-3">
+                            <div className="text-green-400 font-bold text-lg flex items-center gap-2">
+                                📍 Av. Karl Iwers & Jardim Dona Leopoldina
+                            </div>
+                            <p className="text-neutral-300 text-sm leading-relaxed">
+                                Endereço da nossa sede operacional (nº 1800). Se você mora no Jardim Dona Leopoldina, nosso técnico chega à sua residência ou condomínio em menos de 5 minutos a qualquer hora do dia ou da noite.
+                            </p>
+                        </div>
+
+                        <div className="bg-black/70 border border-neutral-800 p-6 rounded-sm space-y-3">
+                            <div className="text-green-400 font-bold text-lg flex items-center gap-2">
+                                🚗 Av. Baltazar de Oliveira Garcia
+                            </div>
+                            <p className="text-neutral-300 text-sm leading-relaxed">
+                                Principal artéria comercial e residencial que corta o Rubem Berta. Atendimento expresso para estabelecimentos comerciais, paradas de ônibus e motoristas parados na avenida.
+                            </p>
+                        </div>
+
+                        <div className="bg-black/70 border border-neutral-800 p-6 rounded-sm space-y-3">
+                            <div className="text-green-400 font-bold text-lg flex items-center gap-2">
+                                🏢 Av. Manoel Elias & Acessos da Zona Norte
+                            </div>
+                            <p className="text-neutral-300 text-sm leading-relaxed">
+                                Deslocamento rápido para condomínios residenciais, faculdades e comércios no entorno da Manoel Elias, Juscelino Kubitschek e ligação direta com a zona norte.
+                            </p>
+                        </div>
+
+                        <div className="bg-black/70 border border-neutral-800 p-6 rounded-sm space-y-3">
+                            <div className="text-green-400 font-bold text-lg flex items-center gap-2">
+                                🛠️ Ruas Internas do Rubem Berta e Leopoldina
+                            </div>
+                            <p className="text-neutral-300 text-sm leading-relaxed">
+                                Conhecimento completo das ruas internas, conjuntos habitacionais e condomínios fechados da região, garantindo localização imediata sem atrasos no GPS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 3. SERVIÇOS EXECUTADOS NO LOCAL COM FOTOS REAIS */}
+            <section className="py-24 bg-black border-b border-neutral-900">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-16">
+                        <span className="text-green-500 font-mono text-xs uppercase tracking-widest block mb-2">// SERVIÇOS 24H NO LOCAL</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-white uppercase tracking-tight">
+                            Soluções Rápidas de Chaveiro no Seu Bairro
+                        </h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                        {/* CARD 1: ABERTURA RESIDENCIAL */}
+                        <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
+                            <div className="relative h-64 w-full">
+                                <Image
+                                    src="/images/im/fechadura-digital-instalacao-2.jpeg"
+                                    alt="Instalação de Fechaduras Digitais e Troca de Segredo na Zona Norte"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-sm px-3 py-1 text-green-400 text-xs font-mono uppercase border border-green-500/30">
+                                    Residencial & Comercial
+                                </div>
+                            </div>
+                            <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                                <div className="space-y-3">
+                                    <h3 className="text-xl font-bold text-white">Abertura de Portas & Fechaduras Digitais</h3>
+                                    <p className="text-neutral-400 text-sm leading-relaxed">
+                                        Porta bateu com a chave por dentro ou a fechadura travou? Realizamos abertura técnica sem estragar a porta e instalamos fechaduras eletrônicas por senha e biometria para reforçar sua segurança.
+                                    </p>
+                                </div>
+                                <a
+                                    href={whatsappLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-center py-3 bg-green-600 hover:bg-green-500 text-white font-bold uppercase text-xs tracking-wider transition-colors rounded-sm shadow-md"
+                                >
+                                    Solicitar Abertura de Porta
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* CARD 2: CHAVEIRO AUTOMOTIVO */}
+                        <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
+                            <div className="relative h-64 w-full">
+                                <Image
+                                    src="/images/im/chaveiro-automotivo-servico-1.jpeg"
+                                    alt="Chaveiro Automotivo e Cópia Codificada no Rubem Berta"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-sm px-3 py-1 text-green-400 text-xs font-mono uppercase border border-green-500/30">
+                                    Socorro Automotivo 24h
+                                </div>
+                            </div>
+                            <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                                <div className="space-y-3">
+                                    <h3 className="text-xl font-bold text-white">Abertura de Carros & Chaves Codificadas</h3>
+                                    <p className="text-neutral-400 text-sm leading-relaxed">
+                                        Carro trancado com chave dentro ou perda da chave do veículo? Atendemos todas as marcas e modelos (Chery, GM, Nissan, Fiat, VW, Ford) com abertura sem riscar e corte de chave codificada no local.
+                                    </p>
+                                </div>
+                                <a
+                                    href={whatsappLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-center py-3 bg-green-600 hover:bg-green-500 text-white font-bold uppercase text-xs tracking-wider transition-colors rounded-sm shadow-md"
+                                >
+                                    Chamar Chaveiro de Carro
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* CARD 3: CÓPIAS E TROCA DE SEGREDO */}
+                        <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
+                            <div className="relative h-64 w-full">
+                                <Image
+                                    src="/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_9.jpeg"
+                                    alt="Confecção de Chaves e Troca de Segredo na Zona Norte Porto Alegre"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-sm px-3 py-1 text-green-400 text-xs font-mono uppercase border border-green-500/30">
+                                    Troca de Segredos
+                                </div>
+                            </div>
+                            <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                                <div className="space-y-3">
+                                    <h3 className="text-xl font-bold text-white">Troca de Cilindros & Cópias Rápidas</h3>
+                                    <p className="text-neutral-400 text-sm leading-relaxed">
+                                        Mudou-se recentemente ou perdeu o molho de chaves? Trocamos o segredo das fechaduras residenciais e comerciais imediatamente, garantindo que chaves antigas não abram mais seu imóvel.
+                                    </p>
+                                </div>
+                                <a
+                                    href={whatsappLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block text-center py-3 bg-green-600 hover:bg-green-500 text-white font-bold uppercase text-xs tracking-wider transition-colors rounded-sm shadow-md"
+                                >
+                                    Trocar Segredo de Fechadura
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* 4. DIFERENCIAIS TÉCNICOS & PROVA SOCIAL */}
+            <section className="py-20 bg-neutral-950 border-b border-neutral-900">
+                <div className="container mx-auto px-4 max-w-5xl">
+                    <div className="text-center mb-12">
+                        <span className="text-green-500 font-mono text-xs uppercase tracking-widest block mb-2">// RAPIDEZ & CONFIANÇA</span>
+                        <h2 className="text-3xl font-bold text-white uppercase">Por que Somos o Chaveiro Mais Chamado da Região</h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="bg-black border border-neutral-800 p-6 rounded-sm space-y-3">
+                            <div className="text-green-400 text-2xl">⚡</div>
+                            <h3 className="text-lg font-bold text-white">Chegada em 5 a 10 Minutos</h3>
+                            <p className="text-neutral-400 text-sm leading-relaxed">
+                                Como nossa matriz física fica na própria Av. Karl Iwers no Leopoldina, você não espera horas por um chaveiro vindo do outro lado da cidade.
+                            </p>
+                        </div>
+
+                        <div className="bg-black border border-neutral-800 p-6 rounded-sm space-y-3">
+                            <div className="text-green-400 text-2xl">🔒</div>
+                            <h3 className="text-lg font-bold text-white">Abertura 100% sem Danos</h3>
+                            <p className="text-neutral-400 text-sm leading-relaxed">
+                                Técnicas não destrutivas com gazuas e michas pantográficas. Sua porta e fechadura continuam funcionando perfeitamente sem necessidade de arrombamento.
+                            </p>
+                        </div>
+
+                        <div className="bg-black border border-neutral-800 p-6 rounded-sm space-y-3">
+                            <div className="text-green-400 text-2xl">💳</div>
+                            <h3 className="text-lg font-bold text-white">Pagamento Fácil & Seguro</h3>
+                            <p className="text-neutral-400 text-sm leading-relaxed">
+                                Aceitamos Pix e parcelamos nos cartões de crédito direto no local do atendimento com total clareza no orçamento antes de iniciar o serviço.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 5. FAQ COMERCIAL */}
+            <section className="py-24 max-w-4xl mx-auto px-4">
+                <div className="text-center mb-12">
+                    <span className="text-green-500 font-mono text-xs uppercase tracking-widest block mb-2">// DÚVIDAS FREQUENTES</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Perguntas Rápidas sobre o Atendimento</h2>
+                </div>
+
+                <div className="space-y-4">
+                    {faqData.map((item, index) => (
+                        <div key={index} className="group border border-neutral-800 bg-neutral-900/40 hover:bg-neutral-900 transition-colors rounded-sm">
+                            <details className="p-6 cursor-pointer">
+                                <summary className="flex items-center justify-between font-bold text-neutral-200 group-hover:text-green-400 uppercase tracking-wide list-none transition-colors">
+                                    {item.question}
+                                    <svg className="w-5 h-5 text-neutral-500 group-hover:text-green-400 transform group-open:rotate-180 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </summary>
+                                <div className="mt-4 text-neutral-400 text-sm leading-relaxed border-t border-neutral-800 pt-4">
+                                    {item.answer}
+                                </div>
+                            </details>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* 6. CTA FINAL */}
+            <section className="py-28 bg-gradient-to-b from-black via-green-950/30 to-black text-center border-t border-neutral-800 relative overflow-hidden">
+                <div className="relative z-10 max-w-3xl mx-auto px-4">
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                        PRECISA DE CHAVEIRO NO <span className="text-green-400">LEOPOLDINA OU RUBEM BERTA?</span>
+                    </h2>
+                    <p className="text-lg text-neutral-300 mb-8 leading-relaxed">
+                        Nossa base física fica na Av. Karl Iwers! Estamos prontos para atender você em 5 a 10 minutos com suporte emergencial 24 horas por dia.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-10 py-5 bg-green-600 hover:bg-green-500 text-white font-bold text-xl uppercase tracking-widest transition-transform hover:scale-105 shadow-[0_0_50px_rgba(34,197,94,0.5)] rounded-sm"
+                        >
+                            Chamar no WhatsApp (Plantão 24h)
+                        </a>
+                        <a
+                            href={phoneLink}
+                            className="inline-flex items-center justify-center px-8 py-5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-white font-bold text-lg uppercase tracking-wider transition-colors rounded-sm"
+                        >
+                            Ligar: (51) 99339-8664
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    )
+}

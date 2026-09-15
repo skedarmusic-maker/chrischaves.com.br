@@ -14,6 +14,8 @@ export default function sitemap() {
         '/sobre/',
         '/contato/',
         '/chaveiro-24h-petropolis-porto-alegre/',
+        '/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/',
+        '/chaveiro-24h-passo-d-areia-cristo-redentor/',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date().toISOString().split('T')[0],

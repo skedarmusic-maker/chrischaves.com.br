@@ -121,10 +121,22 @@ export default function ServicesPage() {
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <Link
+                            href="/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>📍</span> Leopoldina / Rubem Berta (Matriz) →
+                        </Link>
+                        <Link
+                            href="/chaveiro-24h-passo-d-areia-cristo-redentor/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>📍</span> Passo d'Areia / Cristo Redentor →
+                        </Link>
+                        <Link
                             href="/chaveiro-24h-petropolis-porto-alegre/"
                             className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
                         >
-                            <span>🏙️</span> Chaveiro 24h Bairro Petrópolis →
+                            <span>📍</span> Chaveiro 24h Bairro Petrópolis →
                         </Link>
                     </div>
                 </div>
