@@ -186,8 +186,8 @@ export default function ChaveiroLeopoldinaRubemBertaPage() {
                         <div className="w-full lg:w-[480px] relative">
                             <div className="relative rounded-sm overflow-hidden border border-neutral-800 shadow-2xl group">
                                 <Image
-                                    src="/images/im/fechadura-digital-instalacao-1.jpeg"
-                                    alt="Instalação de Fechaduras e Abertura no Jardim Dona Leopoldina e Rubem Berta"
+                                    src="/images/im/foto-fechadura-digital-abertura-mao.jpeg"
+                                    alt="Instalação de Fechaduras Digitais e Abertura no Jardim Dona Leopoldina e Rubem Berta"
                                     width={600}
                                     height={450}
                                     className="object-cover w-full h-[400px] group-hover:scale-105 transition-transform duration-700"
@@ -210,22 +210,22 @@ export default function ChaveiroLeopoldinaRubemBertaPage() {
             <section className="py-20 bg-neutral-950 border-b border-neutral-900">
                 <div className="container mx-auto px-4 max-w-5xl">
                     <div className="text-center mb-12">
-                        <span className="text-green-500 font-mono text-xs uppercase tracking-widest block mb-2">// ATENDIMENTO HIPERLOCAL IMEDIATO</span>
+                        <span className="text-green-500 font-mono text-xs uppercase tracking-widest block mb-2">// LOGÍSTICA EXPRESSA NA ZONA NORTE</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">
-                            Vias Principais com Chegada em Minutos
+                            Deslocamento Rápido em Menos de 10 Minutos
                         </h2>
                         <p className="text-neutral-400 max-w-2xl mx-auto mt-3 text-sm md:text-base">
-                            Por estarmos sediados diretamente no bairro, nossos técnicos não enfrentam trânsito pesado para socorrer você nos principais eixos da região.
+                            Como nossa base física fica na Av. Karl Iwers, temos tempo de resposta imbatível para qualquer chamado emergencial no Jardim Dona Leopoldina e Rubem Berta.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-black/70 border border-neutral-800 p-6 rounded-sm space-y-3">
                             <div className="text-green-400 font-bold text-lg flex items-center gap-2">
-                                📍 Av. Karl Iwers & Jardim Dona Leopoldina
+                                🏠 Av. Karl Iwers (Matriz / Sede Própria)
                             </div>
                             <p className="text-neutral-300 text-sm leading-relaxed">
-                                Endereço da nossa sede operacional (nº 1800). Se você mora no Jardim Dona Leopoldina, nosso técnico chega à sua residência ou condomínio em menos de 5 minutos a qualquer hora do dia ou da noite.
+                                Nossa sede no Jardim Dona Leopoldina permite atendimento quase instantâneo. Em minutos nossa unidade móvel está na sua porta com todo o maquinário necessário.
                             </p>
                         </div>
 
@@ -234,16 +234,16 @@ export default function ChaveiroLeopoldinaRubemBertaPage() {
                                 🚗 Av. Baltazar de Oliveira Garcia
                             </div>
                             <p className="text-neutral-300 text-sm leading-relaxed">
-                                Principal artéria comercial e residencial que corta o Rubem Berta. Atendimento expresso para estabelecimentos comerciais, paradas de ônibus e motoristas parados na avenida.
+                                Eixo central de deslocamento rápido pelo Rubem Berta e conexão com a Zona Norte, garantindo chegada expressa para socorro automotivo e residencial.
                             </p>
                         </div>
 
                         <div className="bg-black/70 border border-neutral-800 p-6 rounded-sm space-y-3">
                             <div className="text-green-400 font-bold text-lg flex items-center gap-2">
-                                🏢 Av. Manoel Elias & Acessos da Zona Norte
+                                ⚡ Av. Manoel Elias & Proximidades da FAPA
                             </div>
                             <p className="text-neutral-300 text-sm leading-relaxed">
-                                Deslocamento rápido para condomínios residenciais, faculdades e comércios no entorno da Manoel Elias, Juscelino Kubitschek e ligação direta com a zona norte.
+                                Rota de fluxo direto para moradores e estudantes da região, com atendimento 24 horas para carros trancados e trocas de cilindro emergenciais.
                             </p>
                         </div>
 
@@ -271,12 +271,12 @@ export default function ChaveiroLeopoldinaRubemBertaPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                        {/* CARD 1: ABERTURA RESIDENCIAL */}
+                        {/* CARD 1: ABERTURA RESIDENCIAL & FECHADURAS DIGITAIS */}
                         <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
                             <div className="relative h-64 w-full">
                                 <Image
-                                    src="/images/im/fechadura-digital-instalacao-2.jpeg"
-                                    alt="Instalação de Fechaduras Digitais e Troca de Segredo na Zona Norte"
+                                    src="/images/im/foto-fechadura-digital-porta-madeira.jpeg"
+                                    alt="Instalação de Fechaduras Digitais Intelbras em Porta de Madeira"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
@@ -306,8 +306,8 @@ export default function ChaveiroLeopoldinaRubemBertaPage() {
                         <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
                             <div className="relative h-64 w-full">
                                 <Image
-                                    src="/images/im/chaveiro-automotivo-servico-1.jpeg"
-                                    alt="Chaveiro Automotivo e Cópia Codificada no Rubem Berta"
+                                    src="/images/im/foto-chave-carro-chevrolet.jpeg"
+                                    alt="Foto Real de Chave Canivete Codificada Chevrolet e Abertura Automotiva"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
@@ -337,18 +337,18 @@ export default function ChaveiroLeopoldinaRubemBertaPage() {
                         <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
                             <div className="relative h-64 w-full">
                                 <Image
-                                    src="/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_9.jpeg"
-                                    alt="Confecção de Chaves e Troca de Segredo na Zona Norte Porto Alegre"
+                                    src="/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_3.webp"
+                                    alt="Fechaduras Stam com Chaves e Cilindros de Reposição Imediata"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-sm px-3 py-1 text-green-400 text-xs font-mono uppercase border border-green-500/30">
-                                    Troca de Segredos
+                                    Troca de Fechaduras & Segredos
                                 </div>
                             </div>
                             <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                                 <div className="space-y-3">
-                                    <h3 className="text-xl font-bold text-white">Troca de Cilindros & Cópias Rápidas</h3>
+                                    <h3 className="text-xl font-bold text-white">Troca de Fechaduras & Cilindros Stam</h3>
                                     <p className="text-neutral-400 text-sm leading-relaxed">
                                         Mudou-se recentemente ou perdeu o molho de chaves? Trocamos o segredo das fechaduras residenciais e comerciais imediatamente, garantindo que chaves antigas não abram mais seu imóvel.
                                     </p>

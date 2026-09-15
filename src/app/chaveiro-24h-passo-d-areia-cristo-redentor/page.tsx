@@ -180,8 +180,8 @@ export default function ChaveiroPassoDareiaCristoRedentorPage() {
                         <div className="w-full lg:w-[480px] relative">
                             <div className="relative rounded-sm overflow-hidden border border-neutral-800 shadow-2xl group">
                                 <Image
-                                    src="/images/im/chaveiro-automotivo-servico-2.jpeg"
-                                    alt="Chaveiro Automotivo e Fechaduras no Passo d'Areia e Cristo Redentor"
+                                    src="/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_8.jpeg"
+                                    alt="Abertura Técnica de Veículos Sem Riscos e Sem Danos no Passo d'Areia"
                                     width={600}
                                     height={450}
                                     className="object-cover w-full h-[400px] group-hover:scale-105 transition-transform duration-700"
@@ -269,8 +269,8 @@ export default function ChaveiroPassoDareiaCristoRedentorPage() {
                         <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
                             <div className="relative h-64 w-full">
                                 <Image
-                                    src="/images/im/chaveiro-automotivo-servico-3.jpeg"
-                                    alt="Abertura de Carros e Chaves Codificadas no Passo d'Areia"
+                                    src="/images/im/foto-chave-carro-chevrolet.jpeg"
+                                    alt="Foto Real de Chave Canivete Codificada Chevrolet e Abertura Automotiva"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
@@ -300,13 +300,13 @@ export default function ChaveiroPassoDareiaCristoRedentorPage() {
                         <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
                             <div className="relative h-64 w-full">
                                 <Image
-                                    src="/images/im/fechadura-digital-instalacao-2.jpeg"
-                                    alt="Instalação de Fechaduras Digitais no Cristo Redentor"
+                                    src="/images/im/foto-fechadura-digital-porta-madeira.jpeg"
+                                    alt="Instalação de Fechaduras Digitais Intelbras em Porta de Madeira"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-sm px-3 py-1 text-green-400 text-xs font-mono uppercase border border-green-500/30">
-                                    Tecnologia & Praticidade
+                                    Fechaduras Digitais & Biometria
                                 </div>
                             </div>
                             <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
@@ -327,22 +327,22 @@ export default function ChaveiroPassoDareiaCristoRedentorPage() {
                             </div>
                         </div>
 
-                        {/* CARD 3: ABERTURAS RESIDENCIAIS */}
+                        {/* CARD 3: ABERTURAS RESIDENCIAIS & TROCA DE FECHADURAS */}
                         <div className="bg-neutral-950 border border-neutral-800 rounded-sm overflow-hidden hover:border-green-500/50 transition-all duration-300 flex flex-col group">
                             <div className="relative h-64 w-full">
                                 <Image
-                                    src="/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_7.webp"
-                                    alt="Abertura de Portas e Fechaduras no Passo d'Areia e Cristo Redentor"
+                                    src="/images/galery/Chris_Chaves_Chaveiro_24_horas_Counter_Porto_Alegre_chaveiro_emergencial_Counter_3.webp"
+                                    alt="Fechaduras Stam Mecânicas com Chaves e Cilindros de Segurança"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-sm px-3 py-1 text-green-400 text-xs font-mono uppercase border border-green-500/30">
-                                    Abertura Residencial
+                                    Abertura Residencial & Cilindros
                                 </div>
                             </div>
                             <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                                 <div className="space-y-3">
-                                    <h3 className="text-xl font-bold text-white">Abertura de Portas & Troca de Segredo</h3>
+                                    <h3 className="text-xl font-bold text-white">Abertura de Portas & Troca de Fechaduras</h3>
                                     <p className="text-neutral-400 text-sm leading-relaxed">
                                         Trancado do lado de fora de casa? Nossos chaveiros realizam abertura não destrutiva e troca de cilindro de segurança na hora, garantindo entrada rápida e tranquila.
                                     </p>
