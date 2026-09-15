@@ -31,9 +31,9 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: domains/chrischaves.com.br/public_html/
+          server-dir: ./
           local-dir: ./out/
-          state-name: .ftp-deploy-sync-state-v2.json
+          state-name: .ftp-deploy-sync-state-v3.json
           exclude: |
             **/.git*
             **/.git*/**
