@@ -8,6 +8,13 @@ export const businessInfo = {
     siteUrl: "https://chrischaves.com.br",
     logoUrl: "https://chrischaves.com.br/logo.png",
     priceRange: "$$",
+    alternateName: [
+        "Cris Chaves",
+        "Cristieli Chaves",
+        "Cris Chaveiro",
+        "Chaveiro Chris 24h",
+        "Locksmith Porto Alegre"
+    ],
     geo: {
         latitude: -30.0108,
         longitude: -51.1333
@@ -26,13 +33,16 @@ export const businessInfo = {
         "Rubem Berta (Porto Alegre)",
         "Passo d'Areia (Porto Alegre)",
         "Cristo Redentor (Porto Alegre)",
+        "Jardim Botânico (Porto Alegre)",
+        "Partenon (Porto Alegre)",
+        "Jardim Carvalho (Porto Alegre)",
         "Canoas",
         "Viamão",
         "Gravataí",
         "Alvorada"
     ],
-    description: "🆘 NÃO FIQUE NA RUA! Chaveiro 24h em Porto Alegre com atendimento IMEDIATO. Abertura de portas, carros e chaves codificadas. Preço Justo e Rapidez. Ligue Agora!",
-    seoTitle: "🆘 CHAVEIRO 24h PORTO ALEGRE - Chegamos em 20 Minutos! 🔴",
+    description: "🆘 ABERTO AGORA! Chaveiro 24h em Porto Alegre com atendimento IMEDIATO. Abertura técnica sem danos de portas, carros e chaves codificadas. Preço Justo e Rapidez. Ligue Agora!",
+    seoTitle: "🆘 CHAVEIRO 24h PORTO ALEGRE - Aberto Agora | Chegamos em 15-20 Min! 🔴",
     services: [
         { name: "Abertura de Portas 24 Horas", slug: "chaveiro-24-horas" },
         { name: "Chaves Codificadas Automotivas", slug: "copia-de-chave-codificada" },

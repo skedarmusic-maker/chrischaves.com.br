@@ -16,6 +16,9 @@ export default function sitemap() {
         '/chaveiro-24h-petropolis-porto-alegre/',
         '/chaveiro-24h-jardim-dona-leopoldina-rubem-berta/',
         '/chaveiro-24h-passo-d-areia-cristo-redentor/',
+        '/chaveiro-24h-jardim-botanico-porto-alegre/',
+        '/chaveiro-24h-partenon-porto-alegre/',
+        '/chaveiro-24h-jardim-carvalho-porto-alegre/',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date().toISOString().split('T')[0],

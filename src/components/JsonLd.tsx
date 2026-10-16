@@ -6,6 +6,7 @@ export function LocalBusinessJsonLd() {
         "@type": "Locksmith",
         "@id": `${businessInfo.siteUrl}/#organization`,
         "name": businessInfo.name,
+        "alternateName": businessInfo.alternateName,
         "url": businessInfo.siteUrl,
         "logo": businessInfo.logoUrl,
         "image": businessInfo.logoUrl,

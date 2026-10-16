@@ -16,24 +16,24 @@ export function Hero() {
             <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
 
                 {/* Status Badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-900/30 border border-green-800 text-green-400 text-sm font-medium mb-8 animate-fade-in-up">
-                    <span className="relative flex h-2 w-2">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-900/30 border border-green-700/60 text-green-400 text-sm font-semibold mb-8 animate-fade-in-up">
+                    <span className="relative flex h-2.5 w-2.5">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
                     </span>
-                    {businessInfo.hours}
+                    Aberto Agora • Plantão 24 Horas em Porto Alegre
                 </div>
 
                 {/* H1 Title - Mandatory Requirement */}
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 max-w-4xl">
                     Chaveiro 24 horas <br className="hidden md:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Chegamos em 20 min</span>
-                    <span className="block text-2xl md:text-4xl mt-4 text-neutral-400 font-medium">Porto Alegre e Região – Chris Chaves</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">Aberto Agora • Chegamos em 20 min</span>
+                    <span className="block text-2xl md:text-4xl mt-4 text-neutral-400 font-medium">Chaveiro Perto de Você em Porto Alegre – Chris Chaves</span>
                 </h1>
 
                 {/* Description/Address */}
                 <h2 className="text-neutral-400 max-w-2xl mb-2 text-xl font-medium">
-                    🆘 <span className="text-white font-bold">Não fique na rua!</span> Atendimento especializado para casas, carros e empresas. Preço justo, rapidez e confiança. ⭐ <span className="text-green-400">5.0 (35+ avaliações)</span>
+                    🆘 <span className="text-white font-bold">Socorro Imediato!</span> Abertura técnica sem danos de portas, carros e chaves codificadas. Preço justo, rapidez e confiança. ⭐ <span className="text-green-400">5.0 (35+ avaliações)</span>
                 </h2>
 
                 {/* CTA Section */}

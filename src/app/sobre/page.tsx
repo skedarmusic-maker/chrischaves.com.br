@@ -36,14 +36,18 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-bold text-green-500 mb-4">Nossa História e Compromisso</h2>
                         <div className="prose prose-invert prose-lg text-neutral-300">
                             <p>
-                                A <strong>Chris Chaves 24h</strong> é uma empresa consolidada, com anos de experiência e qualificação técnica no mercado. Nosso foco principal é o atendimento emergencial qualificado, garantindo que você nunca fique sem assistência quando mais precisa.
+                                A <strong>Chris Chaves 24h</strong> (também reconhecida na região como <em>Cris Chaves</em>, <em>Cristieli Chaves</em> ou <em>Cris Chaveiro</em>) é uma empresa consolidada com anos de experiência e qualificação técnica no mercado gaúcho. Nosso foco principal é o atendimento emergencial qualificado, garantindo socorro rápido 24 horas por dia.
                             </p>
                             <p>
-                                Especializados no segmento de chaveiro, oferecemos soluções completas para residências e veículos. Seja para uma cópia simples, uma abertura emergencial ou a confecção de uma chave automotiva importada complexa, nossa equipe está pronta para agir.
+                                Especializados no segmento de chaveiro técnico, oferecemos soluções completas para residências, condomínios e veículos de todas as montadoras. Seja para uma abertura técnica sem riscos, instalação de fechadura digital biométrica, troca de segredos ou confecção de chave codificada presencial, nossa unidade móvel vai até seu endereço.
                             </p>
                             <p>
-                                Nossa atuação cobre <strong>toda a região de Porto Alegre</strong>, com disponibilidade 24 horas por dia, todos os dias da semana.
+                                Nossa atuação cobre <strong>toda a região de Porto Alegre e Grande POA</strong>, com plantão ativo dia e noite, inclusive sábados, domingos e feriados.
                             </p>
+                            <div className="p-4 bg-neutral-900 border border-green-500/30 rounded-lg text-sm text-neutral-300">
+                                <span className="text-green-400 font-bold block mb-1">🌍 English-Speaking Emergency Locksmith in Porto Alegre</span>
+                                Locked out of your apartment or car? We provide 24/7 fast mobile emergency locksmith services across Porto Alegre (open doors without damage, transponder car keys and digital locks).
+                            </div>
                         </div>
                     </div>
 

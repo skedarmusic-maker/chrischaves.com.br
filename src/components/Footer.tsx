@@ -38,8 +38,8 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/chaveiro-24h-passo-d-areia-cristo-redentor/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
-                                    <span>📍</span> Passo d'Areia / Cristo Redentor
+                                <Link href="/chaveiro-24h-jardim-carvalho-porto-alegre/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Jardim Carvalho (5-10 min)
                                 </Link>
                             </li>
                             <li>
@@ -47,7 +47,22 @@ export function Footer() {
                                     <span>📍</span> Bairro Petrópolis (24h)
                                 </Link>
                             </li>
-                            <li className="text-neutral-500">Zona Norte de Porto Alegre</li>
+                            <li>
+                                <Link href="/chaveiro-24h-jardim-botanico-porto-alegre/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Jardim Botânico (24h)
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/chaveiro-24h-partenon-porto-alegre/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Bairro Partenon (24h)
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/chaveiro-24h-passo-d-areia-cristo-redentor/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Passo d'Areia / Cristo Redentor
+                                </Link>
+                            </li>
+                            <li className="text-neutral-500 pt-1">Zona Norte e Leste de Porto Alegre</li>
                             <li className="text-neutral-500">Canoas, Viamão e Gravataí</li>
                         </ul>
                     </div>
