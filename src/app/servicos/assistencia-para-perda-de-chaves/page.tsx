@@ -2,10 +2,17 @@ import { ServiceJsonLd } from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Assistência para Perda de Chaves em Porto Alegre | Chris Chaves',
-    description: 'Perdeu suas chaves? Oferecemos assistência rápida para abertura de portas e confecção de novas chaves em Porto Alegre. Atendimento emergencial.',
+    title: 'Perda Total de Chaves em Porto Alegre 24h | Residencial e Veicular | Chris Chaves',
+    description: 'Perdeu a chave de casa ou do carro? Assistência emergencial 24h para abertura técnica sem danos e confecção de nova chave a partir do miolo em Porto Alegre.',
     alternates: {
         canonical: 'https://chrischaves.com.br/servicos/assistencia-para-perda-de-chaves/',
+    },
+    openGraph: {
+        title: 'Assistência para Perda Total de Chaves em Porto Alegre | Chris Chaves',
+        description: 'Perdeu todas as chaves? Socorro imediato para abertura e confecção de chave nova residencial e automotiva no local.',
+        url: 'https://chrischaves.com.br/servicos/assistencia-para-perda-de-chaves/',
+        type: 'website',
+        locale: 'pt_BR',
     },
 }
 

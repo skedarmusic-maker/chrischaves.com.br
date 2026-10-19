@@ -45,15 +45,14 @@ export const businessInfo = {
     seoTitle: "🆘 CHAVEIRO 24h PORTO ALEGRE - Aberto Agora | Chegamos em 15-20 Min! 🔴",
     services: [
         { name: "Abertura de Portas 24 Horas", slug: "chaveiro-24-horas" },
-        { name: "Chaves Codificadas Automotivas", slug: "copia-de-chave-codificada" },
-        { name: "Abertura de Carros e Veículos", slug: "copia-de-chaves-de-veiculos" },
+        { name: "Chaves Codificadas e Automotivas", slug: "copia-de-chave-codificada" },
         { name: "Troca de Fechaduras e Segredos", slug: "troca-de-fechaduras" },
         { name: "Chaves para Motocicletas", slug: "chave-de-motocicleta" },
         { name: "Instalação de Fechaduras Eletrônicas", slug: "fechaduras-eletronicas" },
         { name: "Assistência para Perda Total de Chaves", slug: "assistencia-para-perda-de-chaves" },
         { name: "Cópia de Chaves Residenciais", slug: "copia-de-chaves-de-imoveis" },
         { name: "Chaves Multiponto e Pantográficas", slug: "copia-de-chave-multipontos" },
-        { name: "Reprogramação de Chaves Digitais", slug: "reprogramacao-de-chaves-presenciais-e-digitais" }
+        { name: "Reprogramação de Chaves Presenciais e Keyless", slug: "reprogramacao-de-chaves-presenciais-e-digitais" }
     ],
     seo: {
         core: [

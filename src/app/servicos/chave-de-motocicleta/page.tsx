@@ -2,10 +2,17 @@ import { ServiceJsonLd } from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Chave de Motocicleta em Porto Alegre | Chris Chaves',
-    description: 'Cópia e confecção de chaves para motos em Porto Alegre. Atendimento especializado para todas as marcas e modelos. Chaves codificadas e comuns.',
+    title: 'Chave de Motocicleta em Porto Alegre 24h | Cópia e Confecção | Chris Chaves',
+    description: 'Chaveiro para motos em Porto Alegre 24h. Cópia e confecção de chave codificada, chave magnética (Shutter) e comum para Honda, Yamaha, Suzuki, BMW e Kawasaki.',
     alternates: {
         canonical: 'https://chrischaves.com.br/servicos/chave-de-motocicleta/',
+    },
+    openGraph: {
+        title: 'Chave de Motocicleta em Porto Alegre 24h | Chris Chaves',
+        description: 'Socorro e cópia de chave de moto em Porto Alegre. Atendimento para Honda, Yamaha e todas as marcas. Chaves codificadas e magnéticas.',
+        url: 'https://chrischaves.com.br/servicos/chave-de-motocicleta/',
+        type: 'website',
+        locale: 'pt_BR',
     },
 }
 

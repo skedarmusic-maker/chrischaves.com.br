@@ -2,10 +2,17 @@ import { ServiceJsonLd } from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Cópia de Chave Codificada em Porto Alegre | Chris Chaves',
-    description: 'Especialista em cópia e programação de chaves codificadas para veículos nacionais e importados em Porto Alegre. Scanner OBD2 e chips de alta qualidade.',
+    title: 'Cópia de Chave Codificada e Automotiva em Porto Alegre | Chris Chaves',
+    description: 'Chaveiro automotivo em Porto Alegre. Cópia e confecção de chaves codificadas, chaves canivete e abertura de carros nacionais e importados. Plantão 24h com scanner OBD2.',
     alternates: {
         canonical: 'https://chrischaves.com.br/servicos/copia-de-chave-codificada/',
+    },
+    openGraph: {
+        title: 'Chaves Codificadas e Automotivas em Porto Alegre | Chris Chaves',
+        description: 'Especialista em chaves codificadas, canivete e abertura de carros sem danos em Porto Alegre. Programação de chips transponder no local.',
+        url: 'https://chrischaves.com.br/servicos/copia-de-chave-codificada/',
+        type: 'website',
+        locale: 'pt_BR',
     },
 }
 

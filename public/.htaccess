@@ -10,11 +10,30 @@ DirectoryIndex index.html
     Header set Pragma "no-cache"
     Header set Expires "0"
   </FilesMatch>
+
+  # Não indexar arquivos de sistema como o manifest do PWA no Google
+  <FilesMatch "manifest\.webmanifest$">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # ========================================================
+  # REDIRECIONAMENTOS 301 - ELIMINAÇÃO DE CANIBALIZAÇÃO E DUPLICATAS
+  # ========================================================
+  RewriteRule ^servicos/reprogramacao-de-chaves-de-carro-digitais-e-presenciais/?$ /servicos/reprogramacao-de-chaves-presenciais-e-digitais/ [R=301,L]
+  RewriteRule ^servicos/servicos-para-perda-de-chave-do-veiculo/?$ /servicos/assistencia-para-perda-de-chaves/ [R=301,L]
+  RewriteRule ^servicos/copia-de-chaves-de-veiculos/?$ /servicos/copia-de-chave-codificada/ [R=301,L]
+  RewriteRule ^servicos/servico-de-chaveiro-emergencial/?$ /servicos/chaveiro-24-horas/ [R=301,L]
+  RewriteRule ^servicos/troca-de-segredos/?$ /servicos/troca-de-fechaduras/ [R=301,L]
+  RewriteRule ^servicos/copia-de-chave-fechadura-de-tambor/?$ /servicos/copia-de-chaves-de-imoveis/ [R=301,L]
+  RewriteRule ^servicos/copia-de-chave-pantografica/?$ /servicos/copia-de-chave-multipontos/ [R=301,L]
+  RewriteRule ^servicos/copia-de-chave-magnetica/?$ /servicos/copia-de-chave-multipontos/ [R=301,L]
+  RewriteRule ^servicos/fechaduras-de-seguranca/?$ /servicos/troca-de-fechaduras/ [R=301,L]
+  RewriteRule ^servicos/criacao-de-controle-remoto-para-chaves/?$ /servicos/reprogramacao-de-chaves-presenciais-e-digitais/ [R=301,L]
 
   # 1. Se o arquivo ou diretório físico existir, serve diretamente sem reescrita
   RewriteCond %{REQUEST_FILENAME} -f [OR]

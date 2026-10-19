@@ -5,13 +5,13 @@ export function Footer() {
     return (
         <footer className="bg-black border-t border-neutral-900 pt-16 pb-8">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
 
-                    {/* Brand */}
+                    {/* 1. Brand */}
                     <div>
                         <h3 className="text-xl font-bold text-white mb-4">Chris Chaves 24h</h3>
                         <p className="text-neutral-500 mb-6 text-sm">
-                            Sua segurança e tranquilidade em primeiro lugar. Atendimento qualificado dia e noite em Porto Alegre e região.
+                            Sua segurança e tranquilidade em primeiro lugar. Atendimento qualificado dia e noite em Porto Alegre e região metropolitana.
                         </p>
                         <div className="flex gap-4">
                             <a
@@ -28,7 +28,49 @@ export function Footer() {
                         </div>
                     </div>
 
-                    {/* Regiões & Bairros */}
+                    {/* 2. Serviços Principais (SEO Internal Links) */}
+                    <div>
+                        <h4 className="text-white font-semibold mb-4">Serviços 24 Horas</h4>
+                        <ul className="space-y-2 text-neutral-400 text-sm">
+                            <li>
+                                <Link href="/servicos/chaveiro-24-horas/" className="hover:text-green-400 transition-colors">
+                                    Abertura de Portas 24h
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/servicos/copia-de-chave-codificada/" className="hover:text-green-400 transition-colors">
+                                    Chaves Codificadas & Carros
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/servicos/troca-de-fechaduras/" className="hover:text-green-400 transition-colors">
+                                    Troca de Fechaduras e Segredos
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/servicos/chave-de-motocicleta/" className="hover:text-green-400 transition-colors">
+                                    Chaves para Motocicletas
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/servicos/fechaduras-eletronicas/" className="hover:text-green-400 transition-colors">
+                                    Fechaduras Digitais & Eletrônicas
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/servicos/assistencia-para-perda-de-chaves/" className="hover:text-green-400 transition-colors">
+                                    Perda Total de Chaves
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/servicos/" className="text-green-400 font-bold hover:text-green-300 transition-colors">
+                                    → Ver todos os serviços
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* 3. Regiões & Bairros */}
                     <div>
                         <h4 className="text-white font-semibold mb-4">Regiões Atendidas</h4>
                         <ul className="space-y-2 text-neutral-400 text-sm">
@@ -67,16 +109,16 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Contact */}
+                    {/* 4. Contact & Matriz */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4">Contato</h4>
-                        <ul className="space-y-3 text-neutral-500 text-sm">
+                        <h4 className="text-white font-semibold mb-4">Contato & Sede</h4>
+                        <ul className="space-y-3 text-neutral-400 text-sm">
                             <li>
-                                <a href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`} className="hover:text-green-500 text-lg font-bold text-white">
+                                <a href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`} className="hover:text-green-500 text-lg font-bold text-white block">
                                     {businessInfo.phone}
                                 </a>
                             </li>
-                            <li>
+                            <li className="text-green-400 font-mono text-xs uppercase tracking-wider">
                                 {businessInfo.hours}
                             </li>
                             <li>
@@ -84,20 +126,15 @@ export function Footer() {
                                     href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(businessInfo.plusCode)}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:text-green-500"
+                                    className="hover:text-green-500 block text-xs"
                                 >
                                     {businessInfo.plusCode}
                                 </a>
                             </li>
+                            <li className="text-neutral-500 text-xs leading-relaxed pt-2 border-t border-neutral-900">
+                                {businessInfo.address}
+                            </li>
                         </ul>
-                    </div>
-
-                    {/* Address */}
-                    <div>
-                        <h4 className="text-white font-semibold mb-4">Matriz / Sede</h4>
-                        <p className="text-neutral-500 text-sm leading-relaxed">
-                            {businessInfo.address}
-                        </p>
                     </div>
                 </div>
 
