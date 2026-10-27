@@ -9,7 +9,7 @@ export default function sitemap() {
 
     // Static routes
     const routes = [
-        '',
+        '/',
         '/servicos/',
         '/sobre/',
         '/contato/',
