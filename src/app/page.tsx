@@ -59,7 +59,7 @@ export default function Home() {
             {/* Mobile-only button for viewing all services */}
             <div className="fixed bottom-6 left-6 z-50 md:hidden opacity-70">
                 <Link
-                    href="/servicos"
+                    href="/servicos/"
                     className="inline-flex items-center font-bold text-neutral-400 hover:text-white transition-colors border border-neutral-800 bg-black/50 px-4 py-2 rounded-full shadow-lg text-xs"
                 >
                     Serviços

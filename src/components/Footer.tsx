@@ -100,6 +100,16 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/chaveiro-24h-moinhos-de-vento-porto-alegre/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Moinhos de Vento (24h)
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/chaveiro-24h-menino-deus-porto-alegre/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
+                                    <span>📍</span> Menino Deus (24h)
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/chaveiro-24h-passo-d-areia-cristo-redentor/" className="text-green-400 font-bold hover:text-green-300 transition-colors flex items-center gap-1">
                                     <span>📍</span> Passo d'Areia / Cristo Redentor
                                 </Link>

@@ -127,16 +127,46 @@ export default function ServicesPage() {
                             <span>📍</span> Leopoldina / Rubem Berta (Matriz) →
                         </Link>
                         <Link
-                            href="/chaveiro-24h-passo-d-areia-cristo-redentor/"
+                            href="/chaveiro-24h-jardim-carvalho-porto-alegre/"
                             className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
                         >
-                            <span>📍</span> Passo d'Areia / Cristo Redentor →
+                            <span>📍</span> Jardim Carvalho (5-10 min) →
+                        </Link>
+                        <Link
+                            href="/chaveiro-24h-moinhos-de-vento-porto-alegre/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>📍</span> Moinhos de Vento (24h) →
+                        </Link>
+                        <Link
+                            href="/chaveiro-24h-menino-deus-porto-alegre/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>📍</span> Menino Deus (24h) →
                         </Link>
                         <Link
                             href="/chaveiro-24h-petropolis-porto-alegre/"
                             className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
                         >
-                            <span>📍</span> Chaveiro 24h Bairro Petrópolis →
+                            <span>📍</span> Bairro Petrópolis →
+                        </Link>
+                        <Link
+                            href="/chaveiro-24h-jardim-botanico-porto-alegre/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>📍</span> Jardim Botânico →
+                        </Link>
+                        <Link
+                            href="/chaveiro-24h-partenon-porto-alegre/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>📍</span> Bairro Partenon →
+                        </Link>
+                        <Link
+                            href="/chaveiro-24h-passo-d-areia-cristo-redentor/"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-green-950/50 border border-green-500/50 hover:border-green-400 text-green-400 font-bold rounded-lg text-sm transition-all duration-200 hover:scale-105"
+                        >
+                            <span>📍</span> Passo d'Areia / Cristo Redentor →
                         </Link>
                     </div>
                 </div>

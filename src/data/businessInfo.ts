@@ -36,13 +36,15 @@ export const businessInfo = {
         "Jardim Botânico (Porto Alegre)",
         "Partenon (Porto Alegre)",
         "Jardim Carvalho (Porto Alegre)",
+        "Moinhos de Vento (Porto Alegre)",
+        "Menino Deus (Porto Alegre)",
         "Canoas",
         "Viamão",
         "Gravataí",
         "Alvorada"
     ],
-    description: "🆘 ABERTO AGORA! Chaveiro 24h em Porto Alegre com atendimento IMEDIATO. Abertura técnica sem danos de portas, carros e chaves codificadas. Preço Justo e Rapidez. Ligue Agora!",
-    seoTitle: "🆘 CHAVEIRO 24h PORTO ALEGRE - Aberto Agora | Chegamos em 15-20 Min! 🔴",
+    description: "Porta trancada ou chave perdida? Chaveiro 24h em Porto Alegre com chegada em 15 a 20 minutos. Abertura técnica sem danos de portas, carros e chaves codificadas. Chame no WhatsApp!",
+    seoTitle: "Chaveiro 24 Horas em Porto Alegre - Chegamos em 15 Min | Chris Chaves",
     services: [
         { name: "Abertura de Portas 24 Horas", slug: "chaveiro-24-horas" },
         { name: "Chaves Codificadas e Automotivas", slug: "copia-de-chave-codificada" },

@@ -19,6 +19,8 @@ export default function sitemap() {
         '/chaveiro-24h-jardim-botanico-porto-alegre/',
         '/chaveiro-24h-partenon-porto-alegre/',
         '/chaveiro-24h-jardim-carvalho-porto-alegre/',
+        '/chaveiro-24h-moinhos-de-vento-porto-alegre/',
+        '/chaveiro-24h-menino-deus-porto-alegre/',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date().toISOString().split('T')[0],
