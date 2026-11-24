@@ -57,21 +57,41 @@ export default function RootLayout({
     return (
         <html lang="pt-BR">
             <body className={`${inter.className} bg-black text-white antialiased selection:bg-green-500 selection:text-black`}>
+                <noscript>
+                    <iframe
+                        src="https://www.googletagmanager.com/ns.html?id=GTM-WQNDQN8Q"
+                        height="0"
+                        width="0"
+                        style={{ display: 'none', visibility: 'hidden' }}
+                    />
+                </noscript>
                 <Navbar />
                 <div className="pt-20">
                     {children}
                 </div>
                 <Footer />
+                {/* Google Tag Manager & Google Analytics */}
+                <Script
+                    src="https://www.googletagmanager.com/gtm.js?id=GTM-WQNDQN8Q"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-tag-manager" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'gtm.start': new Date().getTime(),
+                            event: 'gtm.js'
+                        });
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                    `}
+                </Script>
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=G-ME8S68TVBG"
                     strategy="afterInteractive"
                 />
                 <Script id="google-analytics" strategy="afterInteractive">
                     {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-
                         gtag('config', 'G-ME8S68TVBG');
                     `}
                 </Script>
